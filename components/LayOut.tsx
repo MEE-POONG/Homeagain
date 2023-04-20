@@ -16,7 +16,7 @@ export default function LayOut({ children }: LayoutProps): JSX.Element {
       <main>
 
         {children}
-        {/* <Footer /> */}
+        <Footer />
         {/* <a href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top">
           <FaArrowUp />
         </a> */}
