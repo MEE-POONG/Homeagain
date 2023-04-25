@@ -1,26 +1,28 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { BsFacebook, BsTelephoneFill } from "react-icons/bs";
+import { IoIosMail } from "react-icons/io";
 
 const SiteHeader = () => {
     return (
-        <div className="container-fluid bg-dark text-light px-0 py-2">
+        <div className="container-fluid bg-info text-light px-0 py-2">
         <div className="row gx-0 d-none d-lg-flex">
             <div className="col-lg-7 px-5 text-start">
                 <div className="h-100 d-inline-flex align-items-center me-4">
-                    <span className="fa fa-phone-alt me-2"></span>
-                    <span>+012 345 6789</span>
+                    <BsFacebook/>
+                    <span className="me-2"></span>
+                    <a href="https://web.facebook.com/profile.php?id=100057487088021">มูลนิธิบ้านหลังใหม่</a>
                 </div>
                 <div className="h-100 d-inline-flex align-items-center">
-                    <span className="far fa-envelope me-2"></span>
-                    <span>info@example.com</span>
+                    <IoIosMail/>
+                    <span className="me-2"></span>
+                    <a href="mailto:info@homeagaindoggiesfoundations.com">info@homeagaindoggiesfoundations.com</a>
                 </div>
             </div>
             <div className="col-lg-5 px-5 text-end">
                 <div className="h-100 d-inline-flex align-items-center mx-n2">
-                    <span>Follow Us:</span>
-                    <a className="btn btn-link text-light" href=""><i className="fab fa-facebook-f"></i></a>
-                    <a className="btn btn-link text-light" href=""><i className="fab fa-twitter"></i></a>
-                    <a className="btn btn-link text-light" href=""><i className="fab fa-linkedin-in"></i></a>
-                    <a className="btn btn-link text-light" href=""><i className="fab fa-instagram"></i></a>
+                    <BsTelephoneFill/>
+                    <span className="me-2"></span>
+                    <a href="tel:+098-241-8799">098-241-8799</a>
                 </div>
             </div>
         </div>

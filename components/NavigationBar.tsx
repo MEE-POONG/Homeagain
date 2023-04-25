@@ -21,30 +21,32 @@ export default function NavigationBar(): JSX.Element {
     }
   };
   return (
-    <div id="sticky-wrapper" className="sticky-wrapper" >
+    <div id="sticky-wrapper" className="sticky-wrapper " >
       <Navbar expand="lg" className={navbarTop ? 'fixed-top' : ''}>
         <Container>
-          <Navbar.Brand href="/">T Active Stevia</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <img  src="/images/banner.jpg" height={80}   alt="" />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav">
             <Nav className="ms-auto me-lg-5 align-items-center f-s-bitter">
               <Link href="/" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                Home
-              </Link>
-              <Link href="/products" className={asPath === "/product" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                Product
+                หน้าหลัก
               </Link>
               <Link href="/about" className={asPath === "/about" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                About
+                เกี่ยวกับเรา
+              </Link>
+              <Link href="/products" className={asPath === "/product" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+                คุณสามารถช่วยเราได้อย่างไร
               </Link>
               <Link href="/blog" className={asPath === "/blog" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                Blogs
+                การอุปถัมภ์
               </Link>
               <Link href="/event" className={asPath === "/event" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                Events
+                การรับอุปการะ
               </Link>
               <Link href="/contact" className={asPath === "/contact" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                Contact
+                ติดต่อเรา
               </Link>
             </Nav>
           </Navbar.Collapse>
