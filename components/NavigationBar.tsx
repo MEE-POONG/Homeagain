@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { Navbar, Container, Nav, Button } from 'react-bootstrap';
+import { Navbar, Container, Nav, Button, Dropdown } from 'react-bootstrap';
+import { BsFillCaretDownFill } from 'react-icons/bs';
 
 export default function NavigationBar(): JSX.Element {
   const { asPath } = useRouter();
@@ -20,12 +21,17 @@ export default function NavigationBar(): JSX.Element {
       setNavbarTop(false);
     }
   };
+
+  const [checkClickPath, setCheckClickPath] = useState("/");
+  useEffect(() => {
+    setCheckClickPath(asPath);
+  }, [asPath]);
   return (
     <div id="sticky-wrapper" className="sticky-wrapper" >
       <Navbar expand="lg" className={navbarTop ? 'fixed-top' : ''}>
         <Container>
           <Navbar.Brand href="/">
-            <img  src="/images/banner.jpg" height={80}   alt="" />
+            <img src="/images/banner.jpg" height={80} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav">
@@ -33,9 +39,30 @@ export default function NavigationBar(): JSX.Element {
               <Link href="/" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 หน้าหลัก
               </Link>
-              <Link href="/about" className={asPath === "/about" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              {/* <Link href="/about" className={asPath === "/about" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 เกี่ยวกับเรา
-              </Link>
+              </Link> */}
+
+              <Dropdown >
+                <Dropdown.Toggle variant=""
+                  className={
+                    checkClickPath === "/about" || checkClickPath === "/about" || checkClickPath === "/about"
+                      ? "nav-item nav-link active"
+                      : "nav-item nav-link"} id="dropdown-basic">
+                  เกี่ยวกับเรา
+                  <i className="me-2">
+                    <BsFillCaretDownFill />
+                  </i>
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu
+                  className=''>
+                  <Dropdown.Item href="/about">ความเป็นมาของเรา</Dropdown.Item>
+                  <Dropdown.Item href="/about">คณะกรรมการ</Dropdown.Item>
+                  <Dropdown.Item href="/about">การทำงานของเรา</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+
               <Link href="/sponsorship" className={asPath === "/product" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 คุณสามารถช่วยเราได้อย่างไร
               </Link>
