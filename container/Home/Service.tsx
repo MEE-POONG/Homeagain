@@ -1,3 +1,4 @@
+import { BiBookReader } from "react-icons/bi";
 export default function Service(){
     return(
         <div className="container-xxl py-5">
@@ -18,7 +19,7 @@ export default function Service(){
                             </div>
                             <h4 className="mb-3">Landscaping</h4>
                             <p className="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a className="btn btn-sm" href=""><i className="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a className="btn btn-sm" href=""><i className="text-primary me-2"><BiBookReader/> </i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -33,7 +34,7 @@ export default function Service(){
                             </div>
                             <h4 className="mb-3">Pruning plants</h4>
                             <p className="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a className="btn btn-sm" href=""><i className="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a className="btn btn-sm" href=""><i className="text-primary me-2"><BiBookReader/></i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -48,7 +49,7 @@ export default function Service(){
                             </div>
                             <h4 className="mb-3">Irrigation & Drainage</h4>
                             <p className="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a className="btn btn-sm" href=""><i className="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a className="btn btn-sm" href=""><i className="text-primary me-2"><BiBookReader/></i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -63,7 +64,7 @@ export default function Service(){
                             </div>
                             <h4 className="mb-3">Garden Maintenance </h4>
                             <p className="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a className="btn btn-sm" href=""><i className="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a className="btn btn-sm" href=""><i className="text-primary me-2"><BiBookReader/></i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -78,7 +79,7 @@ export default function Service(){
                             </div>
                             <h4 className="mb-3">Green Technology</h4>
                             <p className="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a className="btn btn-sm" href=""><i className="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a className="btn btn-sm" href=""><i className="text-primary me-2"><BiBookReader/></i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +94,7 @@ export default function Service(){
                             </div>
                             <h4 className="mb-3">Urban Gardening</h4>
                             <p className="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a className="btn btn-sm" href=""><i className="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a className="btn btn-sm" href=""><i className="text-primary me-2"><BiBookReader/></i>Read More</a>
                         </div>
                     </div>
                 </div>

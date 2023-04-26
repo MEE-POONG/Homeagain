@@ -1,17 +1,19 @@
 import Link from "next/link";
 import React from "react";
 import { Container, Row, Col } from 'react-bootstrap';
+import { BiHomeHeart, BiPhone } from "react-icons/bi";
+import { IoIosMail } from "react-icons/io";
 const Footer: React.FC = () => {
   return (
     <>
-       <div className="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+       <div className="container-fluid text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div className="container py-5">
             <div className="row g-5">
                 <div className="col-lg-3 col-md-6">
                     <h4 className="text-white mb-4">Our Office</h4>
-                    <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p className="mb-2"><i className="me-3"><BiHomeHeart/></i>123 Street, New York, USA</p>
+                    <p className="mb-2"><i className="me-3"><BiPhone/></i>098-241-8799</p>
+                    <p className="mb-2"><i className="me-3"><IoIosMail/></i>info@homeagaindoggiesfoundations.com</p>
                     <div className="d-flex pt-2">
                         <a className="btn btn-square btn-outline-light rounded-circle me-2" href=""><i className="fab fa-twitter"></i></a>
                         <a className="btn btn-square btn-outline-light rounded-circle me-2" href=""><i className="fab fa-facebook-f"></i></a>

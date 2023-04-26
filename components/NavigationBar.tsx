@@ -21,7 +21,7 @@ export default function NavigationBar(): JSX.Element {
     }
   };
   return (
-    <div id="sticky-wrapper" className="sticky-wrapper " >
+    <div id="sticky-wrapper" className="sticky-wrapper" >
       <Navbar expand="lg" className={navbarTop ? 'fixed-top' : ''}>
         <Container>
           <Navbar.Brand href="/">
@@ -36,13 +36,13 @@ export default function NavigationBar(): JSX.Element {
               <Link href="/about" className={asPath === "/about" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 เกี่ยวกับเรา
               </Link>
-              <Link href="/products" className={asPath === "/product" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              <Link href="/sponsorship" className={asPath === "/product" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 คุณสามารถช่วยเราได้อย่างไร
               </Link>
-              <Link href="/blog" className={asPath === "/blog" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              <Link href="/patronage" className={asPath === "/blog" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 การอุปถัมภ์
               </Link>
-              <Link href="/event" className={asPath === "/event" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              <Link href="/adoption" className={asPath === "/event" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 การรับอุปการะ
               </Link>
               <Link href="/contact" className={asPath === "/contact" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
