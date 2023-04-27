@@ -4,20 +4,10 @@ export default function Carousel() {
             <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img className="w-100" src="/images/carousel-1.jpg" alt="" />
-                        <div className="carousel-caption">
-                            <div className="container">
-                                <div className="row justify-content-center">
-                                    <div className="col-lg-8">
-                                        <h1 className="display-1 text-white mb-5 animated slideInDown">Make Your Home Like Garden</h1>
-                                        <a href="" className="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <img className="w-100" src="/images/7-scaled.jpg" alt="" />
                     </div>
                     <div className="carousel-item">
-                        <img className="w-100" src="/images/carousel-2.jpg" alt="" />
+                        <img className="w-100" src="/images/1-scaled.jpg" alt="" />
                         <div className="carousel-caption">
                             <div className="container">
                                 <div className="row justify-content-center">

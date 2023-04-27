@@ -31,7 +31,7 @@ export default function NavigationBar(): JSX.Element {
       <Navbar expand="lg" className={navbarTop ? 'fixed-top' : ''}>
         <Container>
           <Navbar.Brand href="/">
-            <img src="/images/banner.jpg" height={80} alt="" />
+            <img src="/images/banner.jpg"className='logo' alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav">
@@ -49,7 +49,7 @@ export default function NavigationBar(): JSX.Element {
                     checkClickPath === "/about" || checkClickPath === "/about" || checkClickPath === "/about"
                       ? "nav-item nav-link active"
                       : "nav-item nav-link"} id="dropdown-basic">
-                  เกี่ยวกับเรา
+                  เกี่ยวกับมูลนิธิ
                   <i className="me-2">
                     <BsFillCaretDownFill />
                   </i>
@@ -63,14 +63,14 @@ export default function NavigationBar(): JSX.Element {
                 </Dropdown.Menu>
               </Dropdown>
 
-              <Link href="/sponsorship" className={asPath === "/product" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              <Link href="/supportus" className={asPath === "/supportus" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 คุณสามารถช่วยเราได้อย่างไร
               </Link>
-              <Link href="/patronage" className={asPath === "/blog" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                การอุปถัมภ์
-              </Link>
-              <Link href="/adoption" className={asPath === "/event" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              <Link href="/adoption" className={asPath === "/adoption" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 การรับอุปการะ
+              </Link>
+              <Link href="/news" className={asPath === "/news" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+                ข่าวสารกิจกรรม
               </Link>
               <Link href="/contact" className={asPath === "/contact" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 ติดต่อเรา

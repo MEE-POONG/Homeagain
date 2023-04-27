@@ -2,9 +2,10 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import LayOut from '../../components/LayOut'
 import Carousel from '../../container/Home/Carousel'
-import Features from '../../container/Home/Feature'
-import About from '../../container/Home/About'
+import TopFeatures from '../../container/Home/Top-Feature'
 import Service from '../../container/Home/Service'
+import FeatureTwo from '../../container/Home/Featuer-Two'
+import Sponsorship from '../../container/Home/Sponsorship'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,12 +19,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <div className='home-page'>
+      <div className='home-page '>
         <Carousel/>
-        <Features/>
-        <About/>
-        <Service/>
-
+        <TopFeatures/>
+        <FeatureTwo/>
+        <Sponsorship/>
       </div>
     </LayOut>
       

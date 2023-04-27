@@ -1,0 +1,17 @@
+.supportus-page{
+    h1{
+        color: var(--primary);
+    }
+    .box{
+        border-radius: var(--border-radius-medium);
+        box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+        transition: all 0.5s ease;
+    }
+    .box:hover{
+        transform: scale(1);
+    }
+    .boxdetail{
+        padding-top: 20px;
+        transition: all 0.5s;
+    }
+}
