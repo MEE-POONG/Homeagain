@@ -1,13 +1,8 @@
 .about-section {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+   .details{
+    text-indent: 30px;
+   }
+  .origin-section{
+   color: var(--primary);
   }
-  
-  .about-image {
-    border-radius: var(--border-radius-medium);
-    display: block;
-    width: 350px;
-    height: 400px;
-    object-fit: cover;
-  }
+}

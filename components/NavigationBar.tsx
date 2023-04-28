@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { Navbar, Container, Nav, Button, Dropdown } from 'react-bootstrap';
-import { BsFillCaretDownFill } from 'react-icons/bs';
+import { Navbar, Container, Nav, Button, Dropdown, NavDropdown } from 'react-bootstrap';
+import { IoMdArrowDropdown } from 'react-icons/io';
+import { BiMenu } from 'react-icons/bi';
 
 export default function NavigationBar(): JSX.Element {
   const { asPath } = useRouter();
@@ -30,75 +31,89 @@ export default function NavigationBar(): JSX.Element {
     <div id="sticky-wrapper" className="sticky-wrapper" >
       <Navbar expand="lg" className={navbarTop ? 'fixed-top' : ''}>
         <Container>
-          <Navbar.Brand href="/">
-            <img src="/images/banner.jpg" className='logo' alt="" />
+          <Navbar.Brand href='/'>
+            <img src="/images/banner.jpg" className='logo mx-lg-5' alt="" />
           </Navbar.Brand>
+
           <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav">
-            <Nav className="ms-auto me-lg-5 align-items-center f-s-bitter">
-              <Link href="/" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                หน้าหลัก
-              </Link>
-              {/* <Link href="/about" className={asPath === "/about" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                เกี่ยวกับเรา
-              </Link> */}
+            <Link href="/" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              หน้าหลัก
+            </Link>
 
-              <Dropdown >
-                <Dropdown.Toggle variant=""
+            <Dropdown>
+              <Dropdown.Toggle onMouseOver={() => {
+                setCheckClickPath("/about");
+              }}
+                className={
+                  checkClickPath === "/about/origin" ||
+                    checkClickPath === "/about/committee"
+                    ? "nav-item nav-link active"
+                    : "nav-item nav-link"}
+                id=""
+              >
+                <Link href="/about" >
+                  เกี่ยวกับมูลนิธิฯ
+                </Link>
+                <i className="me-2">
+                  <IoMdArrowDropdown />
+                </i>
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu className=''
+                show={
+                  checkClickPath === "/about" ||
+                  checkClickPath === "/about/origin" ||
+                  checkClickPath === "/about/committee"
+                }>
+                <Dropdown.Item
+                  id="buttons"
+                  href="/about"
                   className={
-                    checkClickPath === "/about" || checkClickPath === "/about" || checkClickPath === "/about"
-                      ? "nav-item nav-link active"
-                      : "nav-item nav-link"} id="dropdown-custom">
-                  เกี่ยวกับมูลนิธิ
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu
-                  className="dropdown-menu"
-                  show={
-                    checkClickPath === "/about" ||
-                    checkClickPath === "/about" ||
-                    checkClickPath === "/about" 
+                    asPath === "/about"
+                      ? "dropdown-item ps-5 active"
+                      : "dropdown-item ps-5"
                   }
                 >
-                  <Link
-                    id="buttons" href="/about" className={
-                      asPath === "/about"
-                        ? "dropdown-item active"
-                        : "dropdown-item "
-                    }>
-                    ความเป็นมาของเรา
-                  </Link>
-                  <Link
-                    id="buttons" href="/about" className={
-                      asPath === "/about"
-                        ? "dropdown-item active"
-                        : "dropdown-item "}
-                  >
-                    คณะกรรมการ
-                  </Link>
-                  <Link
-                    id="buttons" href="/about" className={
-                      asPath === "/about"
-                        ? "dropdown-item active"
-                        : "dropdown-item "}>
-                    การทำงานของเรา
-                  </Link>
-                </Dropdown.Menu>
-              </Dropdown>
+                  ความเป็นมาของมูลนิธิฯ
+                </Dropdown.Item>
+                <Dropdown.Item
+                  id="buttons"
+                  href="/about/origin"
+                  className={
+                    asPath === "/about/origin"
+                      ? "dropdown-item ps-5 active"
+                      : "dropdown-item ps-5"
+                  }
+                >
+                  ประกาศจัดตั้ง
+                </Dropdown.Item>
+                <Dropdown.Item
+                  id="buttons"
+                  href="/about/committee"
+                  className={
+                    asPath === "/about/committee"
+                      ? "dropdown-item ps-5 active"
+                      : "dropdown-item ps-5"
+                  }
+                >
+                  คณะกรรมการของมูลนิธิ
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
 
-              <Link href="/supportus" className={asPath === "/supportus" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                คุณสามารถช่วยเราได้อย่างไร
-              </Link>
-              <Link href="/adoption" className={asPath === "/adoption" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                การรับอุปการะ
-              </Link>
-              <Link href="/news" className={asPath === "/news" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                ข่าวสารกิจกรรม
-              </Link>
-              <Link href="/contact" className={asPath === "/contact" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                ติดต่อเรา
-              </Link>
-            </Nav>
+            <Link href="/supportus" className={asPath === "/supportus" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              ร่วมสนับสนุน
+            </Link>
+            <Link href="/patronage" className={asPath === "/patronage" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              การรับอุปถัมภ์สุนัข
+            </Link>
+            <Link href="/adoption" className={asPath === "/adoption" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              การรับอุปการะสุนัข
+            </Link>
+            <Link href="/contact" className={asPath === "/contact" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              ติดต่อเรา
+            </Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>
