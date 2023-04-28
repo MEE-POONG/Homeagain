@@ -31,7 +31,7 @@ export default function NavigationBar(): JSX.Element {
       <Navbar expand="lg" className={navbarTop ? 'fixed-top' : ''}>
         <Container>
           <Navbar.Brand href="/">
-            <img src="/images/banner.jpg"className='logo' alt="" />
+            <img src="/images/banner.jpg" className='logo' alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav">
@@ -48,18 +48,41 @@ export default function NavigationBar(): JSX.Element {
                   className={
                     checkClickPath === "/about" || checkClickPath === "/about" || checkClickPath === "/about"
                       ? "nav-item nav-link active"
-                      : "nav-item nav-link"} id="dropdown-basic">
+                      : "nav-item nav-link"} id="dropdown-custom">
                   เกี่ยวกับมูลนิธิ
-                  <i className="me-2">
-                    <BsFillCaretDownFill />
-                  </i>
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu
-                  className=''>
-                  <Dropdown.Item href="/about">ความเป็นมาของเรา</Dropdown.Item>
-                  <Dropdown.Item href="/about">คณะกรรมการ</Dropdown.Item>
-                  <Dropdown.Item href="/about">การทำงานของเรา</Dropdown.Item>
+                  className="dropdown-menu"
+                  show={
+                    checkClickPath === "/about" ||
+                    checkClickPath === "/about" ||
+                    checkClickPath === "/about" 
+                  }
+                >
+                  <Link
+                    id="buttons" href="/about" className={
+                      asPath === "/about"
+                        ? "dropdown-item active"
+                        : "dropdown-item "
+                    }>
+                    ความเป็นมาของเรา
+                  </Link>
+                  <Link
+                    id="buttons" href="/about" className={
+                      asPath === "/about"
+                        ? "dropdown-item active"
+                        : "dropdown-item "}
+                  >
+                    คณะกรรมการ
+                  </Link>
+                  <Link
+                    id="buttons" href="/about" className={
+                      asPath === "/about"
+                        ? "dropdown-item active"
+                        : "dropdown-item "}>
+                    การทำงานของเรา
+                  </Link>
                 </Dropdown.Menu>
               </Dropdown>
 
