@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                     <p className="mb-2"><i className="me-3"><BiPhone/></i>098-241-8799</p>
                     <p className="mb-2"><i className="me-3"><IoIosMail/></i>info@homeagaindoggiesfoundations.com</p>
                     <div className="d-flex pt-2">
-                        <a className="btn btn-square btn-outline-light rounded-circle me-2" href=""><i><FaFacebookF/></i></a>
+                        <a className="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100057487088021"><i><FaFacebookF/></i></a>
                         {/* <a className="btn btn-square btn-outline-light rounded-circle me-2" href=""><i></i></a> */}
                         {/* <a className="btn btn-square btn-outline-light rounded-circle me-2" href=""><i></i></a> */}
                         {/* <a className="btn btn-square btn-outline-light rounded-circle me-2" href=""><i></i></a> */}

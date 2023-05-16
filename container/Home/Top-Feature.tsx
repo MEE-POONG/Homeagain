@@ -5,12 +5,12 @@ export default function TopFeatures() {
         <div className="container">
                 <div className="row justify-content-around">
                     <div className="col-lg-10 col-12 text-center mx-auto mt-5">
-                        <h2 className="mb-5">Welcome to Kind Heart Charity</h2>
+                        <h2 className="mb-5">ยินดีต้อนรับสู่มูลนิธิบ้านหลังใหม่</h2>
                     </div>
 
                     <div className="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                         <div className="featured-block d-flex justify-content-center align-items-center">
-                            <a href="donate.html" className="d-block">
+                            <a href="patronage" className="d-block">
                                 <img src="images/icon/love.png" className="featured-block-image img-fluid" alt="" />
 
                                 <p className="featured-block-text">ที่พัก <strong>สุนัขจรจัด</strong></p>
@@ -20,7 +20,7 @@ export default function TopFeatures() {
 
                     <div className="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
                         <div className="featured-block d-flex justify-content-center justify-content-around align-items-center">
-                            <a href="donate.html" className="d-block">
+                            <a href="patronage" className="d-block">
                                 <img src="images/icon/animal-care.png" className="featured-block-image img-fluid" alt="" />
 
                                 <p className="featured-block-text"><strong>การรับอุปการะ</strong> สุนัข</p>
@@ -30,7 +30,7 @@ export default function TopFeatures() {
 
                     <div className="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
                         <div className="featured-block d-flex justify-content-center align-items-center">
-                            <a href="donate.html" className="d-block">
+                            <a href="supportus" className="d-block">
                                 <img src="images/icon/donation.png" className="featured-block-image img-fluid" alt="" />
 
                                 <p className="featured-block-text">ช่วยเราด้วยการ<strong>บริจาค</strong></p>

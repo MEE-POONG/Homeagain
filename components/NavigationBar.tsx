@@ -106,7 +106,7 @@ export default function NavigationBar(): JSX.Element {
               ร่วมบริจาค
             </Link>
             <Link href="/patronage" className={asPath === "/patronage" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-              การอุปถัมภ์สุนัขหนึ่งตัว
+              การอุปถัมภ์สุนัข
             </Link>
             <Link href="/adoption" className={asPath === "/adoption" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
               การรับอุปการะสุนัข

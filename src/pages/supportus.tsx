@@ -15,7 +15,7 @@ export default function SupportUsPage() {
                                 <img className=" w-75" src="/images/pic1.jpg" alt="" />
                             </div>
                             <div className="col-lg-6 col-md-7 boxdetail">
-                                <h1 className="display-5 mb-4">ร่วมเป็นจิตอาสา</h1>
+                                <h1 className="mb-4">ร่วมเป็นจิตอาสา</h1>
                                 <p className="mb-4">โครงการนี้เริ่มขึ้นจากการรวมตัวกับเพื่อนๆ คนรักสัตว์ตั้งเป็นกลุ่มเล็กๆ  ชื่อ “กลุ่มเพื่อนข้างถนน เพื่อจิตอาสา โคราช”  เป็นการรวมตัวเพื่อนๆ จากหลากหลายสาขาอาชีพ  กลุ่มเราตั้งขึ้นมาเพราะอยากจะทำอะไรช่วยเหลือสังคมในแบบที่เรารักและถนัด  และทำไหว  ทำงานอาสานี้ในเวลาว่าง</p>
                             </div>
                         </div>
@@ -25,7 +25,7 @@ export default function SupportUsPage() {
                                 <img className="w-75" src="/images/pic1.jpg" alt="" />
                             </div>
                             <div className="col-lg-6 col-md-7 boxdetail">
-                                <h1 className="display-5 mb-4">ร่วมบริจาคสิ่งของจำเป็น</h1>
+                                <h1 className="mb-4">ร่วมบริจาคสิ่งของจำเป็น</h1>
                                 <p className="mb-4">สามารถร่วมบริจาคอาหารเม็ด อุปกรณ์ หรือเครื่องใช้ต่าง ๆ ที่จำเป็นสำหรับสุนัขได้ </p>
                                 <p>ติดต่อ คุณนัท: <strong>098-241-8799</strong> </p>
                             </div>
@@ -36,7 +36,7 @@ export default function SupportUsPage() {
                                 <img className="w-75" src="/images/pic1.jpg" alt="" />
                             </div>
                             <div className="col-lg-6 col-md-7 boxdetail">
-                                <h1 className="display-5 mb-4">ร่วมบริจาคเงินทำบุญ</h1>
+                                <h1 className="mb-4">ร่วมบริจาคเงินทำบุญ</h1>
                                 <p className="mb-2">ร่วมบริจาคเงิน เพื่อช่วยสนับสนุนค่าใช้จ่าย ในการดูแลสุนัข อาทิ ค่าอาหาร ค่ายารักษาฯ</p>
                                 <p><strong>ช่องทางการบริจาค</strong></p>
                                 <p>บัญชีธนาคารกรุไทย ชื่อบัญชี <strong>มูลนิธิบ้านหลังใหม่</strong></p>
