@@ -103,10 +103,10 @@ export default function NavigationBar(): JSX.Element {
             </Dropdown>
 
             <Link href="/supportus" className={asPath === "/supportus" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-              ร่วมสนับสนุน
+              ร่วมบริจาค
             </Link>
             <Link href="/patronage" className={asPath === "/patronage" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-              การรับอุปถัมภ์สุนัข
+              การอุปถัมภ์สุนัขหนึ่งตัว
             </Link>
             <Link href="/adoption" className={asPath === "/adoption" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
               การรับอุปการะสุนัข
