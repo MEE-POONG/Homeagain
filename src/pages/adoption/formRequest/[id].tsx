@@ -10,25 +10,10 @@ export default function FormSpon() {
         <LayOut>
             <section className="form-request container p-5">
                 <div className="row mt-5">
-                    <div className="col-lg-4 col-12 ms-auto mb-5 mb-lg-0">
-                        <div className="contact-info-wrap">
-                            <h2>ช่องทางการปุถัมภ์</h2>
-
-                            <div className="">
-                                <img src="/images/brunch.jpg" className="img-bunch" alt="" />
-
-                                <div className="ms-3">
-                                    <p className="mb-0">ท่านสามารถโอนเงินเพื่อช่วยอุถัมภ์น้อง{dogItem?.dogName} ได้ผ่านบัญชีของเรา และกรอกข้อมูลเพื่อรับข่าวสารต่าง ๆ เกี่ยวกับน้อง ๆ ในมูลนิธิได้</p>
-                                    <p className="mb-0">ชื่อบัญชี: <strong>มูลนิธิบ้านหลังใหม่</strong></p>
-                                    <p className="mb-0">บัญชีเลขที่: <strong>679-3-47783</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-5 col-12 mx-auto">
-                        <form className="custom-form contact-form" action="#" method="post" role="form">
+                <div className="col-lg-5 col-12 mx-auto">
+                        <form className="custom-form" action="#" method="post" role="form">
                             <h2>กรอกข้อมูลของท่าน</h2>
+                            <p>**กรุณากรอกข้อมูลตามความจริง เพื่อใช้ในการติดต่อ และยืนยันตัวตน</p>
                             <div className="row mt-4">
                                 <div className="col-lg-6 col-md-6 col-12">
                                     <label htmlFor="first-name">ชื่อ*</label>
@@ -58,9 +43,34 @@ export default function FormSpon() {
                                 <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" className="form-control"
                                     placeholder="" required />
                             </div>
+                            
+                            <label className="mt-3" htmlFor="email">โปรดอธิบายเกี่ยวกับตัวคุณ พอสังเขป*</label>
+                            <textarea name="message" rows={5} className="form-control " id="message"
+                                        placeholder="เกี่ยวกับคุณ"></textarea>
+
                             <button type="submit" className="button form-control mt-3">บันทึก</button>
                         </form>
                     </div>
+
+
+                    <div className="col-lg-4 col-12 ms-auto mb-5 mb-lg-0">
+                        <div className="contact-info-wrap">
+                            <h2>การรับอุปการะ</h2>
+
+                            <div className="">
+                                {/* <img src="/images/brunch.jpg" className="img-bunch" alt="" /> */}
+                                <img src="/images/banner.jpg" className="w-50" alt="" />
+                                <div className="ms-3">
+                                    <p className="mb-0"></p>
+                                    <p className="mb-0">ติดต่อ: <strong>มูลนิธิบ้านหลังใหม่</strong></p>
+                                    <p className="mb-0">เบอร์โทร: <strong>098-241-8799 (คุณนัท)</strong></p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    
 
                 </div>
             </section>
