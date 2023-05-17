@@ -61,7 +61,7 @@ export default function FormSpon() {
                                 {/* <img src="/images/brunch.jpg" className="img-bunch" alt="" /> */}
                                 <img src="/images/banner.jpg" className="w-50" alt="" />
                                 <div className="ms-3">
-                                    <p className="mb-0"></p>
+                                    <p className="mb-0">มีข้อสงสัยเกี่ยวกับการรับอุปการะสุนัข/แมว</p>
                                     <p className="mb-0">ติดต่อ: <strong>มูลนิธิบ้านหลังใหม่</strong></p>
                                     <p className="mb-0">เบอร์โทร: <strong>098-241-8799 (คุณนัท)</strong></p>
                                 </div>
@@ -71,7 +71,6 @@ export default function FormSpon() {
                     </div>
 
                     
-
                 </div>
             </section>
         </LayOut>
