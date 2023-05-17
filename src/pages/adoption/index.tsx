@@ -24,7 +24,7 @@ export default function AdoptionPage() {
                                         <Card.Text>
                                         รอผู้อุปการะ
                                         </Card.Text>
-                                        <a href={"patronage/" + item.id }>
+                                        <a href={"adoption/" + item.id }>
                                             <Button variant="">โปรดอุปการะหนู</Button>
                                         </a>
                                     </Card.Body>

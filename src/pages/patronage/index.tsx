@@ -15,7 +15,7 @@ export default function PatronagePage() {
                         </div>
                         <div className="row align-content-around">
                             <p className="display-5 text-start py-4">สุนัขที่รอการอุปการะ</p>
-                            <div className="col-lg-3 mb-4">
+                            <div className="col-3 mb-4">
                                 {dogDetail.map((item) =>(
                                 <Card key={item.id} style={{ width: '15rem' }}>
                                     <Card.Img variant="top" src={item.image} />

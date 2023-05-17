@@ -9,7 +9,7 @@ export default function DogDetail() {
     const dogItem = dogDetail.find(item => item.id === id);
     return (
         <LayOut>
-            <div className="featuertwo-section container-xxl py-5">
+            <div className="container-xxl py-5 mt-5">
                 <h2 className="text-center text-lg-start">ทำความรู้จัก น้องถั่วแดง</h2>
                 <div className="container text-center">
                     <img className="w-25" src={dogItem?.image} alt="" />
@@ -17,11 +17,10 @@ export default function DogDetail() {
                 <div className="text-center mt-5" data-wow-delay="0.3s">
                     <p className="mb-4">{dogItem?.story}</p>
                 </div>
-
             </div>
             
-            <div>
-                <Button>รับอุปการะ</Button>
+            <div className="text-center">
+                <a href={"formRequest/" + dogItem?.id } > <Button> ต้องการอุปการะ </Button></a>
             </div>
         </LayOut>
     )
