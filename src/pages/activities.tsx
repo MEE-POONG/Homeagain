@@ -1,30 +1,20 @@
 import React from 'react';
-import {
-  MDBContainer,
-  MDBCol,
-  MDBRow,
-} from 'mdb-react-ui-kit';
-
+import { gallery } from '../../data/dataTest';
 export default function Gallery() {
-  return (
-    <div className='text-center mt-5 py-5'>
-        <h2 className=' bg-info p-2 text-white'>ภาพกิจกรรม</h2>
-       <MDBRow className=' mx-auto'>
-      <MDBCol lg={4} md={12} className='mb-4 mb-lg-0'>
-        <img
-          src='/images/activity/at02.jpg'
-          className='w-50 shadow-1-strong rounded mb-4 px-1'
-          alt=''
-        />
+    return (
 
-        <img
-          src='/images/activity/at01.jpg'
-          className='w-50 shadow-1-strong rounded mb-4 px-1'
-          alt=''
-        />
-      </MDBCol>
-    </MDBRow> 
-    </div>
-    
-  );
+        <div className="container mt-5 text-center gallery mx-auto">
+            <h3>ภาพกิจกรรม</h3>
+            <div className='container d-flex flex-wrap align-content-around'>
+                {gallery.map((item) => (
+                    <div key={item.id} className='card m-2'>
+                        <img className="img-gallery" src={item.img} alt="" />
+                    </div>
+                ))}
+            </div>
+
+
+        </div>
+
+    );
 }
