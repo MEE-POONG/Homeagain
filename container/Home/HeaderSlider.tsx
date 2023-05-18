@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { slider } from "../../../data/dataTest";
+import { slider } from "../../data/dataTest";
 
 export const HeaderSlider = () => {
 

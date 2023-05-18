@@ -6,7 +6,7 @@ import Service from '../../container/Home/Service'
 import FeatureTwo from '../../container/Home/Featuer-Two'
 import Sponsorship from '../../container/Home/Sponsorship'
 import Gallery from './activities'
-import { HeaderSlider } from './Slider'
+import { HeaderSlider } from '../../container/Home/HeaderSlider'
 
 const inter = Inter({ subsets: ['latin'] })
 
