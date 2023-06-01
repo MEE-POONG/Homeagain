@@ -45,8 +45,9 @@
   }
   
   .item img {
-    max-width:100px;
-  }  
+    max-width:120px;
+  }
+ 
 
   .item h4 {
     font-size: 20px;
@@ -55,6 +56,16 @@
     margin-bottom:8px;
     color:#23395c;
   }
-  
+
+  @media (max-width:756px) {
+    .item h4 {
+      font-size: 16px;   
+    }
+    .item img {
+      max-width:100px;
+    }
+
+  }
+
   
 }
