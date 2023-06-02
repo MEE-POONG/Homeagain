@@ -82,7 +82,7 @@ export default function ContactPage() {
                                 </form>
                             </div>
 
-                            <p className="mt-5">แผนที่เส้นทางมูลนิธิ</p>
+                            <h4 className="mt-5">แผนที่เส้นทางมูลนิธิ</h4>
                             <iframe  
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3854.4321904833287!2d102.09983681484462!3d14.968695089568827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31194c93a25401c7%3A0xfaf3ba1732a470d0!2s207%20Vatcharasarid%20Alley%2C%20Tambon%20Nai%20Mueang%2C%20Amphoe%20Mueang%20Nakhon%20Ratchasima%2C%20Chang%20Wat%20Nakhon%20Ratchasima%2030000!5e0!3m2!1sen!2sth!4v1682565964198!5m2!1sen!2sth"
                                 width="600" height="450">

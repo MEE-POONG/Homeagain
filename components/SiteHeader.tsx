@@ -1,9 +1,18 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { useState } from 'react';
+import { Container, Row, Col, Modal, Button } from "react-bootstrap";
 import { BsFacebook, BsTelephoneFill } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
+import DonationModal from './modals';
 
-const SiteHeader = () => {
+
+export default function SiteHeader() {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
+       
         <div className="site-headr container-fluid text-light px-0 py-2">
             <div className="row gx-0 d-none d-lg-flex">
                 <div className="col-lg-7 px-5 text-start">
@@ -19,6 +28,9 @@ const SiteHeader = () => {
                     </div>
                 </div>
                 <div className="col-lg-5 px-5 text-end">
+                    <div className="h-100 d-inline-flex align-items-center mx-4">
+                        <DonationModal/>
+                    </div>
                     <div className="h-100 d-inline-flex align-items-center mx-n2">
                         <BsTelephoneFill />
                         <span className="me-2"></span>
@@ -26,8 +38,10 @@ const SiteHeader = () => {
                     </div>
                 </div>
             </div>
+
+            
         </div>
     );
 };
 
-export default SiteHeader;
+
