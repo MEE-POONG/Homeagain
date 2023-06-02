@@ -146,7 +146,7 @@ export default function Commitee() {
                                         <div className="p-2 people-list px-3 py-4 my-3">
                                             <h6 className="bold mb-0">PUCLIC RELATION</h6>
                                             <p className="bold mb-0"><span>ฝ่ายประชาสมพันธ์</span></p>
-                                            <Image className="rounded-circle" src="https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/67d707e8-8cd8-48d5-291b-13822fab8700/300" />
+                                            <Image className="rounded-circle" src="https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/3839f5a4-fbb7-4a45-2223-55a0d2178900/300" />
                                             <h6 className="bold mb-0 f-s-10">คุณคณิษฐ์นันท์ อิศรางกูร ณ อยุทธยา</h6>
                                             <p className="f-s-5 mb-0 f-s-5">Kanisnan Isarangkun</p>
                                         </div>
@@ -155,7 +155,7 @@ export default function Commitee() {
                                         <div className="p-2 people-list px-3 py-4 my-3">
                                             <h6 className="bold mb-0">TREASURER</h6>
                                             <p className="bold mb-0"><span>เหรัญญิก</span></p>
-                                            <Image className="rounded-circle" src="https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/3839f5a4-fbb7-4a45-2223-55a0d2178900/300" />
+                                            <Image className="rounded-circle" src=" https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/67d707e8-8cd8-48d5-291b-13822fab8700/300" />
                                             <h6 className="bold mb-0 f-s-10">คุณณัฐฐาพร เงินคำ</h6>
                                             <p className="f-s-5 mb-0 f-s-5">Natthaphon Ngoenkham</p>
                                         </div>
