@@ -90,42 +90,36 @@ a {
         background-color: #ffffff;
     }
     img {
-        width: 200px;
-        max-width: 100%;
-        object-fit: contain;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
     }
     .member {
         display: flex;
     }
-    .lv-2 {
-        img{
-            width: 100px;
+    .lv-1 {
+        .people-list{
+            height: 100%;
         }
     }
     .lv-3 {
         font-size: 10px !important;
-        img{
-            width: 100px;
-        }
     }
     @media only screen and (max-width: 1200px) {
-        .lv-1 {
-            h5 {
-                font-size: 1rem;
-            }
+        h5 {
+            font-size: 1rem;
         }
     }
     @media only screen and (max-width: 1024px) {
-        .lv-1 {
-            img {
-                width: 150px;
-                object-fit: contain;
-            }
-            h5 {
-                span {
-                    width: 100%;
-                }
-            }
+        img {
+            width: 150px;
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .name {
+            height: 4rem;
         }
     }
     @media only screen and (max-width: 425px) {
@@ -137,6 +131,6 @@ a {
         }
     }
 }
-.justify-content-center{
+.justify-content-center {
     justify-content: center;
 }
