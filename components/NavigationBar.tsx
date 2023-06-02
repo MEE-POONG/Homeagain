@@ -32,11 +32,10 @@ export default function NavigationBar(): JSX.Element {
       <Navbar expand="lg" className={navbarTop ? 'fixed-top' : ''}>
         <Container>
           <Navbar.Brand href='/'>
-            <img src="/images/banner.jpg" className='logo mx-lg-5' alt="" />
+            <img src="/images/banner.jpg" className='logo' alt="" />
           </Navbar.Brand>
-
           <Navbar.Toggle aria-controls="navbarNav" />
-          <Navbar.Collapse id="navbarNav">
+          <Navbar.Collapse id="navbarNav" className='justify-content-end'>
             <Link href="/" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
               หน้าหลัก
             </Link>
