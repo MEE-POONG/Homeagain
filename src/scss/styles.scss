@@ -87,6 +87,7 @@ a {
     .people-list {
         border-radius: 15px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: #ffffff;
     }
     img {
         width: 200px;
@@ -96,11 +97,16 @@ a {
     .member {
         display: flex;
     }
-    .lv-1 {
-    }
     .lv-2 {
+        img{
+            width: 100px;
+        }
     }
     .lv-3 {
+        font-size: 10px !important;
+        img{
+            width: 100px;
+        }
     }
     @media only screen and (max-width: 1200px) {
         .lv-1 {
