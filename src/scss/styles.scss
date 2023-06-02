@@ -37,6 +37,9 @@ a {
     font-family: "Prompt", sans-serif;
 }
 .slick-slider {
+    .slick-prev:before, .slick-next:before {
+        color: unset !important;
+    }
     .slick-prev {
         left: 0px !important;
         z-index: 999;
