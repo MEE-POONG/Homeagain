@@ -7,6 +7,9 @@
     --third:#44525d;
     --fourth:#5a6f80;
 }
+body{
+    background-color: #efefef;
+}
 
 .back-to-top {
     position: fixed;
@@ -16,10 +19,10 @@
     z-index: 99;
 }
 
-.site-headr{
-    background-color: var(--primary);
+.site-header{
+    background-color: #13293e;
     a{
-        color: #FFFFFF;
+        color: #dededf;
     }
     a:hover{
         color: var(--third);
