@@ -12,7 +12,11 @@ export default function SiteHeader() {
     const handleShow = () => setShow(true);
 
     return (
+<<<<<<< HEAD
         <div className="site-header container-fluid text-light px-0 py-2">
+=======
+        <div className="site-headr container-fluid text-light px-0 py-2">
+>>>>>>> e6daac755d9ae5e1269e0f1fe1189743ab658617
             <div className="row gx-0 d-none d-lg-flex">
                 <div className="col-lg-7 px-5 text-start">
                     <div className="h-100 d-inline-flex align-items-center me-4">
@@ -27,9 +31,12 @@ export default function SiteHeader() {
                     </div>
                 </div>
                 <div className="col-lg-5 px-5 text-end">
+<<<<<<< HEAD
                     <div className="h-100 d-inline-flex align-items-center mx-4">
                         <DonationModal/>
                     </div>
+=======
+>>>>>>> e6daac755d9ae5e1269e0f1fe1189743ab658617
                     <div className="h-100 d-inline-flex align-items-center mx-n2">
                         <BsTelephoneFill />
                         <span className="me-2"></span>

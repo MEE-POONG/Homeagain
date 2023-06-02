@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Prompt';
-    src: url('/fonts/Prompt.ttf') format("truetype");
+    font-family: "Prompt";
+    src: url("/fonts/Prompt.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -11,8 +11,8 @@ h1,
 h2,
 .h2,
 .fw-bold {
-    font-family: 'Prompt', sans-serif;
-    font-weight: 700 ;
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
 }
 
 h3,
@@ -20,8 +20,8 @@ h3,
 h4,
 .h4,
 .fw-medium {
-    font-family: 'Prompt', sans-serif;
-    font-weight: 600 ;
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
 }
 
 h5,
@@ -29,9 +29,41 @@ h5,
 h6,
 .h6,
 .fw-semi-bold {
-    font-family: 'Prompt', sans-serif;
+    font-family: "Prompt", sans-serif;
     font-weight: 500 !important;
 }
-p, a{
-    font-family: 'Prompt', sans-serif;
+p,
+a {
+    font-family: "Prompt", sans-serif;
+}
+.slick-slider {
+    .slick-prev:before, .slick-next:before {
+        color: unset !important;
+    }
+    .slick-prev {
+        left: 0px !important;
+        z-index: 999;
+        color: unset !important;
+        &::before {
+            color: unset;
+        }
+    }
+
+    .slick-next {
+        right: 0px !important;
+        z-index: 999;
+        color: unset !important;
+        &::before {
+            color: unset;
+        }
+    }
+    &:hover {
+        .slick-prev {
+            color: white !important;
+        }
+
+        .slick-next {
+            color: white !important;
+        }
+    }
 }
