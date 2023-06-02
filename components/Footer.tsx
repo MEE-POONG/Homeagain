@@ -7,37 +7,42 @@ import { IoIosMail } from "react-icons/io";
 const Footer: React.FC = () => {
     return (
         <>
-            <div className="container-fluid text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+            <div className="container-fluid text-light footer mt-5 py-2 wow fadeIn" data-wow-delay="0.1s">
                 <div className="container py-5">
                     <div className="row ">
                         <div className="col-md-6 text-break" >
-                            <h4 className="text-white mb-4 ">ติดต่อเรา</h4>
-                            <p className="mb-2"><i className="me-3"><BiHomeHeart /></i>Office 207/11 ถ.วัชรสฤษดิ์ ต.ในเมือง อ.เมือง จ.นครราชสีมา 3000</p>
-                            <p className="mb-2"><i className="me-3"><BiPhone /></i>098-241-8799</p>
-                            <p className="mb-2 ">
-                                <i><IoIosMail className="me-3 d-inline" /></i> 
-                                <span className="d-inline">info@homeagaindoggiesfoundations.com</span> 
-                            </p>
+                                        <h5 className="text-white mb-4 ">ข้อมูลติดต่อ</h5>
+                                        <p className="d-flex mb-2 text-white">
+                                            <i className="me-2"><BiHomeHeart /></i>
+                                            Office 207/11 ถ.วัชรสฤษดิ์ ต.ในเมือง อ.เมือง จ.นครราชสีมา 3000
+                                        </p>
+                                        <p className="d-flex mb-2 text-white">
+                                            <i className="me-2"><BiPhone /></i>
+                                                098-241-8799
+                                        </p>
+                                        <p className="d-flex mb-2 text-white text-break">
+                                            <i className=" me-2"><IoIosMail /></i>
+                                                PCW@homeagaindoggiesfoundation.com
+                                        </p>
+
                             <div className="d-flex pt-2">
                                 <a className="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100057487088021"><i><FaFacebookF /></i></a>
-                                {/* <a className="btn btn-square btn-outline-light rounded-circle me-2" href=""><i></i></a> */}
-                                {/* <a className="btn btn-square btn-outline-light rounded-circle me-2" href=""><i></i></a> */}
-                                {/* <a className="btn btn-square btn-outline-light rounded-circle me-2" href=""><i></i></a> */}
                             </div>
                         </div>
-                        <div className="col-3">
-                            <h4 className="text-white mb-4">หน้า</h4>
-                            <a className="btn btn-link" href="">หน้าหลัก</a>
-                            <a className="btn btn-link" href="">เกี่ยวกับมูลนิธิ</a>
-                            <a className="btn btn-link" href="">สนับสนุนเรา</a>
-                            <a className="btn btn-link" href="">การอุปถัมภ์</a>
-                            <a className="btn btn-link" href="">การรับอุปการะ</a>
-                            <a className="btn btn-link" href="">ติดต่อเรา</a>
+                        <div className="col-md-3 py-2 mt-5 mt-lg-0">
+                            <h5 className="text-white mb-2">หน้า</h5>
+                            <a className="btn btn-link text-white" href="">หน้าหลัก</a>
+                            <a className="btn btn-link text-white" href="">เกี่ยวกับมูลนิธิ</a>
+                            <a className="btn btn-link text-white" href="">สนับสนุนเรา</a>
+                            <a className="btn btn-link text-white" href="">การอุปถัมภ์</a>
+                            <a className="btn btn-link text-white" href="">การรับอุปการะ</a>
+                            <a className="btn btn-link text-white" href="">ติดต่อเรา</a>
                         </div>
 
                         <div className="col-md-3">
-                            {/* <h4 className="text-white mb-4">ช่องทางบริจาค</h4> */}
-                            <p className="mb-2"> <strong>เลขประจำตัวผู้เสียภาษีอากร</strong> </p>
+                            <h5 className="text-white mb-3 mt-5 mt-lg-0">ช่องทางบริจาค</h5>
+                            <img className="w-50" src="images/brunch.jpg" alt="" />
+                            <p className="mb-2 mt-3"> <strong>เลขประจำตัวผู้เสียภาษีอากร</strong> </p>
                             <p>099-3-00043012-3</p>
 
                         </div>
