@@ -23,7 +23,7 @@ export default function Commitee() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-6 col-md-6 col-sm-6">
+                            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 col-md-6 col-sm-6">
                                 <div className="p-2 w-100 people-list px-3 py-4 my-3" >
                                     <h5 className=" text-uppercase  bold">
                                         PRESIDENT
@@ -35,7 +35,7 @@ export default function Commitee() {
                                     <p className="f-s-5 mb-0">Panorchit Chitsuwan Waymouth</p>
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-6 col-md-6 col-sm-6">
+                            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 col-md-6 col-sm-6">
                                 <div className="p-2 w-100 people-list px-3 py-4 my-3">
                                     <h5 className=" text-uppercase  bold">VICE PRESIDENT
                                         <br />
@@ -49,9 +49,9 @@ export default function Commitee() {
                         </div>
                         <hr />
                         <div className="row">
-                            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-6 col-md-12">
+                            <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
                                 <div className="row  lv-2">
-                                    <div className="col-lg-12 col-md-6 col-sm-6 col-xs-12">
+                                    <div className="col-lg-12 col-md-6 col-sm-6 col-6">
                                         <div className="p-2 w-100 people-list px-3 py-4 my-3" >
                                             <h5 className=" text-uppercase  bold">
                                                 MANAGER
@@ -63,7 +63,7 @@ export default function Commitee() {
                                             <p className="f-s-5 mb-0">Nattha  Chuenchom</p>
                                         </div>
                                     </div>
-                                    <div className="col-lg-12 col-md-6 col-sm-6 col-xs-12">
+                                    <div className="col-lg-12 col-md-6 col-sm-6 col-6">
                                         <div className="p-2 w-100 people-list px-3 py-4 my-3" >
                                             <h5 className=" text-uppercase bold f-s-1-rem">
                                                 ASSISTANT MANAGER
@@ -79,7 +79,7 @@ export default function Commitee() {
                             </div>
                             <div className="col-xl-9 col-lg-9 col-md-12">
                                 <div className="row lv-3">
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <div className="col-lg-3 col-md-4 col-sm-4 col-6">
                                         <div className="p-2 people-list px-3 py-4 my-3">
                                             <h6 className="bold mb-0">CHEIF</h6>
                                             <p className="bold mb-0"><span>หัวหน้าศูนย์หนองบุญมาก</span></p>
@@ -88,7 +88,7 @@ export default function Commitee() {
                                             <p className="f-s-5 mb-0 f-s-5">Prawit  Kumngoen</p>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <div className="col-lg-3 col-md-4 col-sm-4 col-6">
                                         <div className="p-2 people-list px-3 py-4 my-3">
                                             <h6 className="bold mb-0">VETERINARY</h6>
                                             <p className="bold mb-0"><span>สัตวแพทย์</span></p>
@@ -97,7 +97,7 @@ export default function Commitee() {
                                             <p className="f-s-5 mb-0 f-s-5">Dr.Sathaporn Anammat</p>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <div className="col-lg-3 col-md-4 col-sm-4 col-6">
                                         <div className="p-2 people-list px-3 py-4 my-3">
                                             <h6 className="bold mb-0">DIRECTOR</h6>
                                             <p className="bold mb-0"><span>กรรมการมูลนิธิบ้านหลังใหม่</span></p>
@@ -106,7 +106,7 @@ export default function Commitee() {
                                             <p className="f-s-5 mb-0 f-s-5">Chanutha Narkgerd</p>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <div className="col-lg-3 col-md-4 col-sm-4 col-6">
                                         <div className="p-2 people-list px-3 py-4 my-3">
                                             <h6 className="bold mb-0">DIRECTOR</h6>
                                             <p className="bold mb-0"><span>กรรมการมูลนิธิบ้านหลังใหม่</span></p>
@@ -115,7 +115,7 @@ export default function Commitee() {
                                             <p className="f-s-5 mb-0 f-s-5">Suda Rianmanee</p>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <div className="col-lg-3 col-md-4 col-sm-4 col-6">
                                         <div className="p-2 people-list px-3 py-4 my-3">
                                             <h6 className="bold mb-0">PUCLIC RELATION</h6>
                                             <p className="bold mb-0"><span>ฝ่ายประชาสมพันธ์</span></p>
@@ -124,7 +124,7 @@ export default function Commitee() {
                                             <p className="f-s-5 mb-0 f-s-5">Luxanavadee Snidwongs</p>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <div className="col-lg-3 col-md-4 col-sm-4 col-6">
                                         <div className="p-2 people-list px-3 py-4 my-3">
                                             <h6 className="bold mb-0">PUCLIC RELATION</h6>
                                             <p className="bold mb-0"><span>ฝ่ายประชาสมพันธ์</span></p>
@@ -133,7 +133,7 @@ export default function Commitee() {
                                             <p className="f-s-5 mb-0 f-s-5">Lalda Snidwongs</p>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <div className="col-lg-3 col-md-4 col-sm-4 col-6">
                                         <div className="p-2 people-list px-3 py-4 my-3">
                                             <h6 className="bold mb-0">PUCLIC RELATION</h6>
                                             <p className="bold mb-0"><span>ฝ่ายประชาสมพันธ์</span></p>
@@ -142,7 +142,7 @@ export default function Commitee() {
                                             <p className="f-s-5 mb-0 f-s-5">Thaina Weymouth</p>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <div className="col-lg-3 col-md-4 col-sm-4 col-6">
                                         <div className="p-2 people-list px-3 py-4 my-3">
                                             <h6 className="bold mb-0">PUCLIC RELATION</h6>
                                             <p className="bold mb-0"><span>ฝ่ายประชาสมพันธ์</span></p>
@@ -151,7 +151,7 @@ export default function Commitee() {
                                             <p className="f-s-5 mb-0 f-s-5">Kanisnan Isarangkun</p>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <div className="col-lg-3 col-md-4 col-sm-4 col-6">
                                         <div className="p-2 people-list px-3 py-4 my-3">
                                             <h6 className="bold mb-0">TREASURER</h6>
                                             <p className="bold mb-0"><span>เหรัญญิก</span></p>
@@ -160,7 +160,7 @@ export default function Commitee() {
                                             <p className="f-s-5 mb-0 f-s-5">Natthaphon Ngoenkham</p>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <div className="col-lg-3 col-md-4 col-sm-4 col-6">
                                         <div className="p-2 people-list px-3 py-4 my-3">
                                             <h6 className="bold mb-0">WEBSITE</h6>
                                             <p className="bold mb-0"><span>ดูแลเว็บไซต์</span></p>
