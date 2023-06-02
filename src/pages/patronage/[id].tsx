@@ -1,12 +1,12 @@
 import { useRouter } from "next/router";
 import LayOut from "../../../components/LayOut"
-import { dogDetail } from "../../../data/dataTest";
+import { dogDetailTH } from "../../../data/dataTest";
 import { Button } from "react-bootstrap";
 
-export default function DogDetail() {
+export default function DogDetailTH() {
     const router = useRouter();
     const { id } = router.query;
-    const dogItem = dogDetail.find(item => item.id === id);
+    const dogItem = dogDetailTH.find(item => item.id === id);
 
 
     return (

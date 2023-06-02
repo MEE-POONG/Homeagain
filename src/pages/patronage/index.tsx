@@ -1,6 +1,6 @@
 import { Button, Card } from "react-bootstrap";
 import LayOut from "../../../components/LayOut";
-import { dogDetail } from "../../../data/dataTest";
+import { dogDetailTH } from "../../../data/dataTest";
 
 
 export default function PatronagePage() {
@@ -16,7 +16,7 @@ export default function PatronagePage() {
                         
                         <div className="row ">
                             <p className="display-5 text-start py-4">สุนัขที่รอการอุปการะ</p>
-                            {dogDetail.map((item) => (
+                            {dogDetailTH.map((item) => (
                                 <div key={item.id} className="col-lg-3 mb-4 d-flex d-sm-flex justify-content-between">
                         
                                     <Card  style={{ width: '15rem' }}>

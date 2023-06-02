@@ -1,11 +1,9 @@
 import { useRouter } from "next/router";
 import LayOut from "../../../../components/LayOut";
-import { dogDetail } from "../../../../data/dataTest";
 
 export default function FormSpon() {
     const router = useRouter();
     const { id } = router.query;
-    const dogItem = dogDetail.find(item => item.id === id);
     return (
         <LayOut>
             <section className="form-request container p-5">

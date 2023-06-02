@@ -13,14 +13,14 @@ const Committee: React.FC = () => {
                     <div className="py-5 origin-section">
                         <p className="display-5">คณะกรรมการของมูลนิธิฯ</p>
                     </div>
-                    <div className="committee">
+                    {/* <div className="committee">
                         {['1', '2', '3'].map((level) => (
-                            <>
+                            <div key={level}>
                                 <div className={`row lv-${level} justify-content-center my-2`}>
                                     {committeeLevel(level).map((member) => (
                                         member.positionEN === 'ADVISOR' ?
                                             (
-                                                <div className="col-xl-6 col-lg-6 col-md-12 my-3">
+                                                <div key={member.id} className="col-xl-6 col-lg-6 col-md-12 my-3">
                                                     <div className="d-flex people-list ADVISOR px-3 py-4 align-items-center">
                                                         <Image className="rounded-circle my-2" src={member.img} />
                                                         <div className="w-100  m-auto">
@@ -42,7 +42,7 @@ const Committee: React.FC = () => {
                                                 </div>
                                             ) :
                                             (
-                                                <div className="col-xl-3 col-lg-3 col-md-4 col-6 col-md-6 col-12  my-3">
+                                                <div key={member.id} className="col-xl-3 col-lg-3 col-md-4 col-6 col-md-6 col-12  my-3">
                                                     <div className="p-2 w-100 people-list px-2 py-4">
                                                         <h5 className="text-uppercase bold">
                                                             {member.positionEN}
@@ -60,9 +60,10 @@ const Committee: React.FC = () => {
                                     ))}
                                 </div>
                                 <hr />
-                            </>
+                            </div>
                         ))}
-                    </div>
+                    </div> */}
+                    <Image className="w-100" src="/images/Beige-Mod.png" alt="committee" />
                 </section>
             </LayOut >
         </>
