@@ -45,7 +45,7 @@ export default function NavigationBar(): JSX.Element {
               <Link href="/about/committee" className='dropdown-item'>คณะกรรมการของมูลนิธิ</Link>
             </NavDropdown>
             <Link href="/supportus" className={asPath === "/supportus" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-              ร่วมบริจาค
+              การบริจาค
             </Link>
             <Link href="/patronage" className={asPath === "/patronage" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
               การอุปถัมภ์สุนัข
