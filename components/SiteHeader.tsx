@@ -13,7 +13,7 @@ export default function SiteHeader() {
 
     return (
        
-        <div className="site-headr container-fluid text-light px-0 py-2">
+        <div className="site-header container-fluid text-light px-0 py-2">
             <div className="row gx-0 d-none d-lg-flex">
                 <div className="col-lg-7 px-5 text-start">
                     <div className="h-100 d-inline-flex align-items-center me-4">

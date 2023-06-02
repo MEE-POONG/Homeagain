@@ -38,7 +38,7 @@ export default function ContactPage() {
                                             </a>
                                         </p>
 
-                                        <p className="d-flex mb-2">
+                                        <p className="d-flex mb-2 text-break">
                                             <i className=" me-2"><IoMdMail /></i>
                                             <a href="mailto:PCW@homeagaindoggiesfoundation.com">
                                                 PCW@homeagaindoggiesfoundation.com
