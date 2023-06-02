@@ -40,68 +40,11 @@ export default function NavigationBar(): JSX.Element {
             <Link href="/" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
               หน้าหลัก
             </Link>
-
-            <Dropdown>
-              <Dropdown.Toggle onMouseOver={() => {
-                setCheckClickPath("/about");
-              }}
-                className={
-                  checkClickPath === "/about/origin" ||
-                    checkClickPath === "/about/committee"
-                    ? "nav-item nav-link active"
-                    : "nav-item nav-link"}
-                id=""
-              >
-                <Link href="/about" >
-                  เกี่ยวกับมูลนิธิฯ
-                </Link>
-                <i className="me-2">
-                  <IoMdArrowDropdown />
-                </i>
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu className=''
-                show={
-                  checkClickPath === "/about" ||
-                  checkClickPath === "/about/origin" ||
-                  checkClickPath === "/about/committee"
-                }>
-                <Dropdown.Item
-                  id="buttons"
-                  href="/about"
-                  className={
-                    asPath === "/about"
-                      ? "dropdown-item ps-5 active"
-                      : "dropdown-item ps-5"
-                  }
-                >
-                  ความเป็นมาของมูลนิธิฯ
-                </Dropdown.Item>
-                <Dropdown.Item
-                  id="buttons"
-                  href="/about/origin"
-                  className={
-                    asPath === "/about/origin"
-                      ? "dropdown-item ps-5 active"
-                      : "dropdown-item ps-5"
-                  }
-                >
-                  ประกาศจัดตั้ง
-                </Dropdown.Item>
-                <Dropdown.Item
-                  id="buttons"
-                  href="/about/committee"
-                  className={
-                    asPath === "/about/committee"
-                      ? "dropdown-item ps-5 active"
-                      : "dropdown-item ps-5"
-                  }
-                >
-                  คณะกรรมการของมูลนิธิ
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-
+            <NavDropdown title="เกี่ยวกับมูลนิธิฯ" id="basic-nav-dropdown">
+              <Link href="/about" className='dropdown-item'>ความเป็นมาของมูลนิธิฯ</Link>
+              <Link href="/about/origin" className='dropdown-item'>ประกาศจัดตั้ง</Link>
+              <Link href="/about/committee" className='dropdown-item'>คณะกรรมการของมูลนิธิ</Link>
+            </NavDropdown>
             <Link href="/supportus" className={asPath === "/supportus" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
               ร่วมบริจาค
             </Link>
