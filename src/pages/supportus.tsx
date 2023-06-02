@@ -8,7 +8,7 @@ export default function SupportUsPage() {
                     <div className="container text-center py-5">
                         <h2 className="display-5 mb-5">วิธีร่วมบริจาค</h2>
 
-                        <div className="text-md-start">
+                        <div className="text-start">
                             <h4>ท่านสามารถบริจาคอาหารสัตว์และสิ่งของอื่น ๆ ที่จำเป็นต่อการดูแลสัตว์ ดังนี้</h4>
                             {/* <div className="mt-4">
                                 <h5>สิ่งของที่ต้องการด่วน (ใช้ต่อเนื่อง)</h5>
