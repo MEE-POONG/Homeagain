@@ -5,11 +5,12 @@ import { IoIosMail } from "react-icons/io";
 import DonationModal from './modals';
 
 
-export default function SiteHeader() {
-    const [show, setShow] = useState(false);
+const NavigationBar: React.FC = () => {
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const [currentLanguage, setCurrentLanguage] = useState<'en' | 'th'>('en');
+    const switchLanguage = () => {
+        setCurrentLanguage(currentLanguage === 'en' ? 'th' : 'en');
+    };
 
     return (
 
@@ -33,9 +34,15 @@ export default function SiteHeader() {
                     <span className="me-2"></span>
                     <a href="tel:+098-241-8799">098-241-8799</a>
                 </div>
+                <div className='mx-3'>
+                    <button onClick={switchLanguage} className='btn'>
+                        Switch to {currentLanguage === 'en' ? 'Thai' : 'English'}
+                    </button>
+                </div>
             </div>
         </div>
     );
 };
 
 
+export default NavigationBar;

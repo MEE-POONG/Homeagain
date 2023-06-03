@@ -1,13 +1,12 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { Navbar, Container, Nav, Button, Dropdown, NavDropdown } from 'react-bootstrap';
-import { IoMdArrowDropdown } from 'react-icons/io';
-import { BiMenu } from 'react-icons/bi';
-
-export default function NavigationBar(): JSX.Element {
+import { Navbar, Container, NavDropdown } from 'react-bootstrap';
+import { NavigationBarData } from '../data/titleTag';
+const NavigationBar: React.FC = () => {
   const { asPath } = useRouter();
   const [navbarTop, setNavbarTop] = useState<boolean>(false);
+  
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -39,10 +38,10 @@ export default function NavigationBar(): JSX.Element {
             <Link href="/" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
               หน้าหลัก
             </Link>
-            <NavDropdown title="เกี่ยวกับมูลนิธิฯ" id="basic-nav-dropdown">
-              <Link href="/about" className='dropdown-item'>ความเป็นมาของมูลนิธิฯ</Link>
-              <Link href="/about/origin" className='dropdown-item'>ประกาศจัดตั้ง</Link>
-              <Link href="/about/committee" className='dropdown-item'>คณะกรรมการของมูลนิธิ</Link>
+            <NavDropdown title="เกี่ยวกับมูลนิธิฯ" id="basic-nav-dropdown" className={asPath === "/about" || asPath === "/about/origin" || asPath === "/about/committee" ? "active" : ""}>
+              <Link href="/about" className={asPath === "/about" ? "dropdown-item active" : "dropdown-item"}>ความเป็นมาของมูลนิธิฯ</Link>
+              <Link href="/about/origin" className={asPath === "/about/origin" ? "dropdown-item active" : "dropdown-item"}>ประกาศจัดตั้ง</Link>
+              <Link href="/about/committee" className={asPath === "/about/committee" ? "dropdown-item active" : "dropdown-item"}>คณะกรรมการของมูลนิธิ</Link>
             </NavDropdown>
             <Link href="/supportus" className={asPath === "/supportus" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
               การบริจาค
@@ -62,3 +61,4 @@ export default function NavigationBar(): JSX.Element {
     </div>
   );
 };
+export default NavigationBar;
