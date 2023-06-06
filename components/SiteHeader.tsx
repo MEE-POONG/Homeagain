@@ -1,15 +1,16 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import { Container, Row, Col, Modal, Button, Image } from "react-bootstrap";
 import { BsFacebook, BsTelephoneFill } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
 import DonationModal from './modals';
+import { LanguageContext } from './LanguageContext';
 
+const SiteHeader: React.FC = () => {
+    const { currentLanguage, setCurrentLanguage } = useContext(LanguageContext);
 
-const NavigationBar: React.FC = () => {
-
-    const [currentLanguage, setCurrentLanguage] = useState<'en' | 'th'>('en');
+    // const [currentLanguage, setCurrentLanguage] = useState<'en' | 'th'>('en');
     const switchLanguage = () => {
-        setCurrentLanguage(currentLanguage === 'en' ? 'th' : 'en');
+        setCurrentLanguage(currentLanguage === 'EN' ? 'TH' : 'EN');
     };
 
     return (
@@ -36,8 +37,8 @@ const NavigationBar: React.FC = () => {
                 </div>
                 <div className='mx-3'>
                     <button onClick={switchLanguage} className='btn language p-0'>
-                        <Image className={currentLanguage === 'th' ? 'show' : ''} width={45} src={'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/d6b61f6d-92fb-4830-0dfd-aa3ef41ed900/100'} />
-                        <Image className={currentLanguage === 'en' ? 'show' : ''} width={45} src={'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/b284a787-d18d-42be-6c9d-bc01cfd5d300/100'} />
+                        <Image className={currentLanguage === 'TH' ? 'show' : ''} width={45} src={'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/d6b61f6d-92fb-4830-0dfd-aa3ef41ed900/100'} />
+                        <Image className={currentLanguage === 'EN' ? 'show' : ''} width={45} src={'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/b284a787-d18d-42be-6c9d-bc01cfd5d300/100'} />
                     </button>
                 </div>
             </div>
@@ -46,4 +47,4 @@ const NavigationBar: React.FC = () => {
 };
 
 
-export default NavigationBar;
+export default SiteHeader;

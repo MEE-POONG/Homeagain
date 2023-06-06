@@ -3,10 +3,24 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { Navbar, Container, NavDropdown } from 'react-bootstrap';
 import { NavigationBarData } from '../data/titleTag';
+import { useContext } from 'react';
+import { LanguageContext } from './LanguageContext';
+interface NavItem {
+  id: string;
+  page: string;
+  link: string;
+  type: string;
+  language: string;
+  list?: Array<{ page: string; link: string; }>;
+}
+interface NavigationBarProps {
+  navigationData: NavItem[];
+}
+
 const NavigationBar: React.FC = () => {
   const { asPath } = useRouter();
   const [navbarTop, setNavbarTop] = useState<boolean>(false);
-  
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -21,11 +35,12 @@ const NavigationBar: React.FC = () => {
       setNavbarTop(false);
     }
   };
+  const { currentLanguage } = useContext(LanguageContext);
 
-  const [checkClickPath, setCheckClickPath] = useState("/");
-  useEffect(() => {
-    setCheckClickPath(asPath);
-  }, [asPath]);
+  const currentLanguageData = NavigationBarData.filter(item => item.language === currentLanguage);
+
+  console.log(currentLanguageData);
+
   return (
     <div id="sticky-wrapper" className="sticky-wrapper" >
       <Navbar expand="lg" className={navbarTop ? 'fixed-top' : ''}>
@@ -34,7 +49,7 @@ const NavigationBar: React.FC = () => {
             <img src="/images/banner.jpg" className='logo' alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarNav" />
-          <Navbar.Collapse id="navbarNav" className='justify-content-end'>
+          {/* <Navbar.Collapse id="navbarNav" className='justify-content-end'>
             <Link href="/" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
               หน้าหลัก
             </Link>
@@ -55,6 +70,29 @@ const NavigationBar: React.FC = () => {
             <Link href="/contact" className={asPath === "/contact" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
               ติดต่อเรา
             </Link>
+          </Navbar.Collapse> */}
+          <Navbar.Collapse id="navbarNav" className='justify-content-end'>
+            {currentLanguageData.map(item => {
+              if (item.type === 'link') {
+                return (
+                  <Link href={item.link} key={item.id} className={asPath === item.link ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+                    {item.page}
+                  </Link>
+                );
+              }
+              if (item.type === 'dropdown') {
+                return (
+                  <NavDropdown title={item.page} id={`nav-dropdown-${item.id}`} key={item.id}
+                    className={item.list?.some(({ link }) => asPath.includes(item.link + link)) ? "active" : ""}>
+                    {item.list?.map((dropdownItem, index) => (
+                      <Link href={item.link + dropdownItem.link} key={index} className={asPath === item.link + dropdownItem.link ? "dropdown-item active" : "dropdown-item"}>
+                        {dropdownItem.page}
+                      </Link>
+                    ))}
+                  </NavDropdown>
+                );
+              }
+            })}
           </Navbar.Collapse>
         </Container>
       </Navbar>
