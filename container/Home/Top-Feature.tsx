@@ -8,16 +8,13 @@ export default function TopFeatures() {
     return (
         <>
             <section>
+                <div className='titie-tab mt-5'>
+                    {currentLanguage === "EN"
+                        ? "Welcome to the new house foundation"
+                        : "ยินดีต้อนรับสู่มูลนิธิบ้านหลังใหม่"}
+                </div>
                 <div className="container">
                     <div className="row justify-content-around">
-                        <div className="col-lg-10 col-12 text-center mx-auto mt-5">
-                            <h2 className="mb-5"> 
-                                {currentLanguage === "EN"
-                                ? "Welcome to the new house foundation"
-                                : "ยินดีต้อนรับสู่มูลนิธิบ้านหลังใหม่"}
-                            </h2>
-                        </div>
-
                         <div className="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                             <div className="featured-block d-flex justify-content-center align-items-center">
                                 <a href="patronage" className="d-block">
@@ -51,6 +48,6 @@ export default function TopFeatures() {
                 </div>
             </section>
         </>
-        
+
     )
 }
