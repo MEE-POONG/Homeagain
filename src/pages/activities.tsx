@@ -2,7 +2,6 @@ import React from 'react';
 import { gallery } from '../../data/dataTest';
 export default function Gallery() {
     return (
-
         <div className="container mt-5 text-center gallery mx-auto">
             <h3>ภาพกิจกรรม</h3>
             <div className='container d-flex flex-wrap align-content-around justify-content-center'>
@@ -12,8 +11,6 @@ export default function Gallery() {
                     </div>
                 ))}
             </div>
-
-
         </div>
 
     );
