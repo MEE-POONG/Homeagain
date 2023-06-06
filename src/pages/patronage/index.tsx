@@ -1,41 +1,54 @@
+import { useEffect, useContext } from 'react';
 import { Button, Card } from "react-bootstrap";
 import LayOut from "../../../components/LayOut";
-
-// Define the type of each dog detail item
+import { dogDetail } from "../../../data/dataTest";
+import Link from "next/link";
+import { LanguageContext } from "../../../components/LanguageContext";
 interface DogDetail {
-  id: string;
-  image: string;
-  old: string;
+    id: string;
+    image: string;
+    dogName: string;
+    character: string;
+    sex: string;
+    dateofbirth?: string;
+    old: string;
+    story: string;
+    dateCome?: string;
 }
 
-// Assuming dogDetailTH is an array of DogDetail
-const dogDetail: DogDetail[] = /* Your data here */;
-
-const PatronagePage = (): JSX.Element => {
-  return (
-    <LayOut>
-      <div className="adoption-page container-fluid py-5 fade-in" data-wow-delay="0.1s">
-        {/* rest of your code */}
-        <div className="row ">
-          <p className="display-5 text-start py-4">สุนัขที่รอการอุปการะ</p>
-          {dogDetail.map((item: DogDetail) => (
-            <div key={item.id} className="col-lg-3 mb-4 d-flex d-sm-flex justify-content-between">
-              <Card style={{ width: '15rem' }}>
-                <Card.Img variant="top" src={item.image} />
-                <Card.Body>
-                  <Card.Title>เพศเมีย</Card.Title>
-                  <Card.Text>{item.old}</Card.Text>
-                  <a href={"patronage/" + item.id}>
-                    <Button variant="">โปรดอุปถัมภ์หนู</Button>
-                  </a>
-                </Card.Body>
-              </Card>
-            </div> 
-          ))}
-        </div>
-      </div>
-    </LayOut>
-  );
+const myDogDetail: DogDetail[] = dogDetail;
+const PatronagePage: React.FC = () => {
+    const { currentLanguage } = useContext(LanguageContext);
+    return (
+        <LayOut>
+            <div className="adoption-page container py-5 fade-in" data-wow-delay="0.1s">
+                <div className="row ">
+                    <p className="display-5 text-center py-4">{currentLanguage === "EN" ? "Adoption Dog" : "สุนัขที่รอการอุปการะ"}</p>
+                    {myDogDetail.map((item: DogDetail) => (
+                        <div key={item.id} className="col-lg-3 mb-4 d-flex d-sm-flex justify-content-between">
+                            <Card style={{ width: '15rem' }}>
+                                <Card.Img variant="top" src={item.image} />
+                                <Card.Body>
+                                    <Card.Title>{item.dogName}</Card.Title>
+                                    <Card.Text className="p-0 m-0">
+                                        Old : {item.old}
+                                    </Card.Text>
+                                    <Card.Text className="p-0 m-0">
+                                        Sex : {item.sex}
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Body className=" text-center pt-0">
+                                    <Link href={"patronage/" + item.id} className="btn">
+                                        โปรดอุปถัมภ์หนู
+                                    </Link>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </LayOut>
+    );
 };
 
 export default PatronagePage;
