@@ -39,7 +39,7 @@ const NavigationBar: React.FC = () => {
 
   const currentLanguageData = NavigationBarData.filter(item => item.language === currentLanguage);
 
-  console.log(currentLanguageData);
+  // console.log(currentLanguageData);
 
   return (
     <div id="sticky-wrapper" className="sticky-wrapper" >
