@@ -50,6 +50,11 @@ export const committee = [
     { id: '14', img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/98d3128c-7d0b-42dd-4767-4794ee05c000/300', nameTH: "คุณทศพร ดีสุทธิ", nameEN: "Tossapom Doesutti", positionTH: "ดูแลเว็บไซต์", positionEN: "WEBSITE", detailTH: "", detailEN: "", level: "3" },
 
 ]
-export const activityPic = [
+export const setting = [
+    {
+        nameTH: "มูลนิธิบ้านหลังใหม่", nameEN: "New House Foundation",
+        myAddress: { address: "207/11", road: "วัชรสฤษดิ์", Subdistrict: "ในเมือง", district: "เมือง", province: "นครราชสีมา", postcode: "3000" },
+        social: { facebook: "https://www.facebook.com/profile.php?id=100057487088021", instagram: "", email: "info@homeagaindoggiesfoundations.com", tel: "098-241-8799" }
+    }
 
 ];
