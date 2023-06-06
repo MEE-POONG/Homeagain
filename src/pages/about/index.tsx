@@ -11,9 +11,9 @@ export default function AboutPage() {
     return (
         <LayOut>
             {/* Page Header */}
-            <section className='about-section container-fluid'>
+            <section className='about-section container-fluid '>
                 <img src="/images/pic2.png" className=' w-100' alt="" />
-                <div className="container-xxl py-5">
+                <div className="container-xxl py-5 bg-white mt-5 rounded-3">
                     <div className="container">
                         <div className="row g-5 align-items-center">
                             <div className="col-lg-4 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
