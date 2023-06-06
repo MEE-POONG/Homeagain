@@ -1,12 +1,20 @@
+import { useContext } from "react";
+import { LanguageContext } from "../../components/LanguageContext";
 import LayOut from "../../components/LayOut";
 
 export default function SupportUsPage() {
+    const { currentLanguage } = useContext(LanguageContext);
+
     return (
         <>
             <LayOut>
                 <div className="supportus-page container-fluid py-5 mb-5" data-wow-delay="0.1s">
                     <div className="container text-center py-5">
-                        <h2 className="display-5 mb-5">วิธีร่วมบริจาค</h2>
+                        <h2 className="display-5 mb-5">
+                            {currentLanguage === "EN"
+                                ? "Welcome to the new house foundation"
+                                : "วิธีร่วมบริจาค"}
+                        </h2>
 
                         <div className="text-start">
                             <h4>ท่านสามารถบริจาคอาหารสัตว์และสิ่งของอื่น ๆ ที่จำเป็นต่อการดูแลสัตว์ ดังนี้</h4>
