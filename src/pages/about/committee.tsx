@@ -1,8 +1,12 @@
 import { Image, Row } from "react-bootstrap";
 import LayOut from "../../../components/LayOut";
 import { committee } from "../../../data/dataTest";
+import { useContext } from "react";
+import { LanguageContext } from "../../../components/LanguageContext";
 
 const Committee: React.FC = () => {
+    const { currentLanguage } = useContext(LanguageContext);
+
     const committeeLevel = (level) => {
         return committee.filter((member) => member.level === level);
     };
@@ -11,7 +15,11 @@ const Committee: React.FC = () => {
             <LayOut>
                 <section className="about-section container text-center py-5 ">
                     <div className="py-5 origin-section">
-                        <p className="display-5">คณะกรรมการของมูลนิธิฯ</p>
+                        <p className="display-5">
+                            {currentLanguage === "EN"
+                                ? "WBoard of Directors of the Foundation"
+                                : "คณะกรรมการของมูลนิธิฯ"}
+                        </p>
                     </div>
                     {/* <div className="committee">
                         {['1', '2', '3'].map((level) => (
