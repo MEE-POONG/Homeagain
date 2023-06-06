@@ -98,7 +98,7 @@ a {
         display: flex;
     }
     .lv-1 {
-        .people-list{
+        .people-list {
             height: 100%;
         }
     }
@@ -133,4 +133,10 @@ a {
 }
 .justify-content-center {
     justify-content: center;
+}
+.language {
+    filter: grayscale(100%);
+    &.show {
+        filter: grayscale(0%);
+    }
 }
