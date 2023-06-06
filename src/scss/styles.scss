@@ -147,7 +147,13 @@ a {
     color: #ffffff;
     font-size: 2rem;
     text-align: center;
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
 }
 .object-contain{
     object-fit: contain;
+}
+.title-prompt {
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
 }

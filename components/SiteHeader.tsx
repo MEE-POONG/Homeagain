@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { Container, Row, Col, Modal, Button, Image } from "react-bootstrap";
 import { BsFacebook, BsTelephoneFill } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
-import DonationModal from './modals';
+import DonationModal from './Donation';
 import { LanguageContext } from './LanguageContext';
 
 const SiteHeader: React.FC = () => {

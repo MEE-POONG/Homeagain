@@ -7,7 +7,7 @@ export default function Sponsorship() {
 
     return (
         <section className="sponsorship text-center">
-            <div className='titie-tab mt-5 mb-5'>
+            <div className='titie-tab mt-5 mb-5 title-prompt'>
                 {currentLanguage === "EN"
                     ? "Supporter"
                     : "ผู้สนับสนุน"}
