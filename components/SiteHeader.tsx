@@ -35,10 +35,9 @@ const NavigationBar: React.FC = () => {
                     <a href="tel:+098-241-8799">098-241-8799</a>
                 </div>
                 <div className='mx-3'>
-                    <button onClick={switchLanguage} className='btn'>
-                        Switch to {currentLanguage === 'en' ? 'Thai' : 'English'}
-                        <Image className='th' width={25} src={'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/d6b61f6d-92fb-4830-0dfd-aa3ef41ed900/100'} />
-                        <Image className='en' width={25} src={'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/b284a787-d18d-42be-6c9d-bc01cfd5d300/100'} />
+                    <button onClick={switchLanguage} className='btn language p-0'>
+                        <Image className={currentLanguage === 'th' ? 'show' : ''} width={45} src={'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/d6b61f6d-92fb-4830-0dfd-aa3ef41ed900/100'} />
+                        <Image className={currentLanguage === 'en' ? 'show' : ''} width={45} src={'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/b284a787-d18d-42be-6c9d-bc01cfd5d300/100'} />
                     </button>
                 </div>
             </div>

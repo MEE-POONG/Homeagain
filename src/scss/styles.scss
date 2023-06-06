@@ -135,8 +135,10 @@ a {
     justify-content: center;
 }
 .language {
-    filter: grayscale(100%);
-    &.show {
+    img {
+        filter: grayscale(100%);
+    }
+    img.show {
         filter: grayscale(0%);
     }
 }
