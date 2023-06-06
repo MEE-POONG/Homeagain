@@ -44,8 +44,7 @@ export default function FormSpon() {
                             </div>
                             <div className="mt-2">
                                 <label htmlFor="tel">เบอร์โทรศัพท์*</label>
-                                <input type="tel" name="tel" id="tel" className="form-control 
-                    " placeholder="" required />
+                                <input type="tel" name="tel" id="tel" className="form-control" placeholder="" required />
                             </div>
 
                             <div className="mt-2">
