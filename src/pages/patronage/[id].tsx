@@ -27,7 +27,7 @@ const DogDetailPage: React.FC = () => {
     return (
         <LayOut>
             <div className='titie-tab py-2'>
-            {currentLanguage === "EN" ? "To Patronize : " : "ทำความรู้จัก : "} {dogItem?.dogName}
+                {currentLanguage === "EN" ? "To Patronize : " : "ทำความรู้จัก : "} {dogItem?.dogName}
             </div>
             <div className="container adoption-page">
                 <Row className='mt-5'>

@@ -17,10 +17,21 @@ export const slider = [
 ];
 
 export const gallery = [
-    { id: '1', img: '/images/activity/at02.jpg' },
-    { id: '2', img: '/images/activity/at03.jpg' },
-    { id: '3', img: '/images/activity/at04.jpg' },
-    { id: '4', img: '/images/activity/at01.jpg' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/5dba1040-41e4-482b-9229-2c610fb45a00/300' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/bf34ea6b-ccce-4bc5-6ff2-645308538700/300' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/366df787-bbec-45ef-9656-ade153f87f00/300' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/570e7e87-5b11-433b-ff69-c71c1bcdae00/300' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/a04dc24f-bca1-432a-47d9-76247b93d600/300' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/9727982d-0a37-4347-77f0-66b76ced7200/300' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/cbaa5a12-6c24-47de-2b4a-053ed21d8900/300' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/4da9e0a9-26f1-4c67-9089-123909331800/300' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/45fe727e-41e1-4ab1-c0cc-5a3ba038b000/300' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/3ce350c0-f21f-4b03-4481-2f4411d7a100/300' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/1f529e94-ee13-48fa-41b4-9c8f240c3000/300' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/5716b858-e474-4a99-607d-2cad09b43d00/300' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/7ea5316b-5aeb-4413-952f-ba6a1a88b300/300' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/32aa3bf6-0c11-4e18-d44a-68a2fe281b00/300' },
+    { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/0182b98a-5e36-4f31-b307-7136ab158a00/300' },
 ]
 export const committee = [
     { id: '1', img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/fb9efe15-dde2-45d7-2d34-65446db0e700/300', nameTH: "พระวิเทศสิทธิธรรมมาภรณ์ (เจ้าคุณฤทธิ์) เจ้าอาวาสวัดอดัมมยตาราม", nameEN: "CHAO KHUN RIT", positionTH: "ที่ปรึกษา", positionEN: "ADVISOR", detailTH: "ผู้ก่อตั้งศูนย์ปฏิบัติธรรม Northwest Meditation Center", detailEN: "", level: "1" },
@@ -39,3 +50,6 @@ export const committee = [
     { id: '14', img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/98d3128c-7d0b-42dd-4767-4794ee05c000/300', nameTH: "คุณทศพร ดีสุทธิ", nameEN: "Tossapom Doesutti", positionTH: "ดูแลเว็บไซต์", positionEN: "WEBSITE", detailTH: "", detailEN: "", level: "3" },
 
 ]
+export const activityPic = [
+
+];
