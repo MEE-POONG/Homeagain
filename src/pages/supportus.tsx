@@ -37,8 +37,7 @@ export default function SupportUsPage() {
                                 <p className="mb-0">- น้ำยาล้างจาน , ถุงขยะ ขนาดกลางและใหญ่</p>
                                 <p className="mb-0">- แชมพูอาบน้ำสุนัข</p>
                             </div>
-                            <p className="mb-0">ท่านสามารถร่วมบริจาคเป็นสิ่งของอื่น ๆ นอกจากรายการข้างต้นได้</p>
-                            <p>ซึ่งการร่วมบริจาค สามารถติดต่อเจ้าหน้าที่มูลนิธิ คุณนัท: 098-241-8799 เพื่อดำเนินการ</p>
+                            <p className="mb-0">ท่านสามารถร่วมบริจาคเป็นสิ่งของอื่น ๆ นอกจากรายการข้างต้นได้ ซึ่งการร่วมบริจาค สามารถติดต่อเจ้าหน้าที่มูลนิธิ คุณนัท: 098-241-8799 เพื่อดำเนินการ</p>
 
                         </div>
 
@@ -51,7 +50,7 @@ export default function SupportUsPage() {
                                 <p className="mb-0">เลขที่บัญชี :
                                     <button onClick={() => copy('679-3-47783-8')}
                                         className="border-0 bg-transparent">
-                                        <strong>679-3-47783-8</strong> <BiCopy/> copy
+                                        <strong>679-3-47783-8</strong> <BiCopy/> 
                                     </button>
                                 </p>
                                 <p className="mb-0">SWIFTCOED : KRTHTHBK </p>
