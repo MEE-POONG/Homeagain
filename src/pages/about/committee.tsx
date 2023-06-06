@@ -21,7 +21,7 @@ const Committee: React.FC = () => {
                                 : "คณะกรรมการของมูลนิธิฯ"}
                         </p>
                     </div>
-                    {/* <div className="committee">
+                    <div className="committee">
                         {['1', '2', '3'].map((level) => (
                             <div key={level}>
                                 <div className={`row lv-${level} justify-content-center my-2`}>
@@ -70,8 +70,8 @@ const Committee: React.FC = () => {
                                 <hr />
                             </div>
                         ))}
-                    </div> */}
-                    <Image className="w-100" src="/images/Beige-Mod.png" alt="committee" />
+                    </div>
+                    {/* <Image className="w-100" src="/images/Beige-Mod.png" alt="committee" /> */}
                 </section>
             </LayOut >
         </>

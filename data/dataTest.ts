@@ -74,6 +74,6 @@ export const setting = [
         nameTH: "มูลนิธิบ้านหลังใหม่", nameEN: "New House Foundation",
         myAddress: { address: "207/11", road: "วัชรสฤษดิ์", Subdistrict: "ในเมือง", district: "เมือง", province: "นครราชสีมา", postcode: "3000" },
         social: { facebook: "https://www.facebook.com/profile.php?id=100057487088021", instagram: "", email: "info@homeagaindoggiesfoundations.com", tel: "098-241-8799" },
-        donate: { bank: "ธนาคารกรุงไทย", name: "มูลนิธิบ้านหลังใหม่ Home Again Doggies Foundation", account: "679-3-47783-8", swiftcode: "KRTHTHBK" }
+        donate: { bank: "ธนาคารกรุงไทย", name: "มูลนิธิบ้านหลังใหม่ Home Again Doggies Foundation", account: "679-3-47783-8", swiftcode: "KRTHTHBK", taxpayer: "099-3-00043012-3" }
     }
 ];
