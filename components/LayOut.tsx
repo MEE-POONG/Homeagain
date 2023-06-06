@@ -13,11 +13,9 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const [currentLanguage, setCurrentLanguage] = useState<string>('EN');
 
   return (
-    <LanguageContext.Provider value={{ currentLanguage, setCurrentLanguage }}>
-
+    <>
       <SiteHeader />
       <NavigationBar />
       <main>
@@ -27,7 +25,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <FaArrowUp />
         </a> */}
       </main>
-    </LanguageContext.Provider>
+    </>
   );
 };
 
