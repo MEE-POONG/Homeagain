@@ -1,12 +1,12 @@
 export const dogDetail = [
-    { id: '1', image: '/images/FB-ถั่วแดง.jpg', dogName: 'ถั่วแดง', character: 'ขี้เล่น ร่าเริง', sex: 'เพศเมีย', dateofbirth: '-', old: '2ปี', story: 'น้องถั่วแดง เป็นสุนัขที่แม่ของน้องคลอดแล้วทิ้งไว้ข้างกองขยะ....', dateCome: '20 พ.ค. 2563' },
-    { id: '2', image: '/images/FB-ถั่วดิน.jpg', dogName: 'ถั่วดิน', character: 'ขี้เล่น ร่าเริง', sex: 'เพศเมีย', old: '1ปี', story: 'น้องถั่วแดง เป็นสุนัขที่แม่ของน้องคลอดแล้วทิ้งไว้ข้างกองขยะ....' },
-    { id: '3', image: '/images/FB-ถั่วเหลือง.jpg', dogName: 'ถั่วเหลือง', character: 'ขี้เล่น ร่าเริง', sex: 'เพศเมีย', old: '1ปี กับ 5เดือน ', story: 'น้องถั่วแดง เป็นสุนัขที่แม่ของน้องคลอดแล้วทิ้งไว้ข้างกองขยะ....' },
-    { id: '4', image: '/images/FB-ถั่วแปป.jpg', dogName: 'ถั่วแปป', character: 'ขี้เล่น ร่าเริง', sex: 'เพศผู้', old: '1ปี กับ 5เดือน ', story: 'น้องถั่วแดง เป็นสุนัขที่แม่ของน้องคลอดแล้วทิ้งไว้ข้างกองขยะ....' },
-    { id: '5', image: '/images/FB-ถั่วแดง.jpg', dogName: 'Red Bean', character: 'Playful, Cheerful', sex: 'Female', dateofbirth: '-', old: '2 years', story: 'Red Bean is a puppy whose mother gave birth and then abandoned next to a pile of garbage....', dateCome: 'May 20, 2563' },
-    { id: '6', image: '/images/FB-ถั่วดิน.jpg', dogName: 'Ground Bean', character: 'Playful, Cheerful', sex: 'Female', old: '1 year', story: 'Red Bean is a puppy whose mother gave birth and then abandoned next to a pile of garbage....' },
-    { id: '7', image: '/images/FB-ถั่วเหลือง.jpg', dogName: 'Yellow Bean', character: 'Playful, Cheerful', sex: 'Female', old: '1 year 5 months', story: 'Red Bean is a puppy whose mother gave birth and then abandoned next to a pile of garbage....' },
-    { id: '8', image: '/images/FB-ถั่วแปป.jpg', dogName: 'Bean Pap', character: 'Playful, Cheerful', sex: 'Male', old: '1 year 5 months', story: 'Red Bean is a puppy whose mother gave birth and then abandoned next to a pile of garbage....' },
+    { id: '1', language: 'TH', image: '/images/FB-ถั่วแดง.jpg', dogName: 'ถั่วแดง', character: 'ขี้เล่น ร่าเริง', sex: 'เพศเมีย', dateofbirth: '-', old: '2ปี', story: 'น้องถั่วแดง เป็นสุนัขที่แม่ของน้องคลอดแล้วทิ้งไว้ข้างกองขยะ....', dateCome: '20 พ.ค. 2563' },
+    { id: '2', language: 'TH', image: '/images/FB-ถั่วดิน.jpg', dogName: 'ถั่วดิน', character: 'ขี้เล่น ร่าเริง', sex: 'เพศเมีย', old: '1ปี', story: 'น้องถั่วดิน เป็นสุนัขที่แม่ของน้องคลอดแล้วทิ้งไว้ข้างกองขยะ....' },
+    { id: '3', language: 'TH', image: '/images/FB-ถั่วเหลือง.jpg', dogName: 'ถั่วเหลือง', character: 'ขี้เล่น ร่าเริง', sex: 'เพศเมีย', old: '1ปี กับ 5เดือน ', story: 'น้องถั่วเหลือง เป็นสุนัขที่แม่ของน้องคลอดแล้วทิ้งไว้ข้างกองขยะ....' },
+    { id: '4', language: 'TH', image: '/images/FB-ถั่วแปป.jpg', dogName: 'ถั่วแปป', character: 'ขี้เล่น ร่าเริง', sex: 'เพศผู้', old: '1ปี กับ 5เดือน ', story: 'น้องถั่วแปป เป็นสุนัขที่แม่ของน้องคลอดแล้วทิ้งไว้ข้างกองขยะ....' },
+    { id: '5', language: 'EN', image: '/images/FB-ถั่วแดง.jpg', dogName: 'Red Bean', character: 'Playful, Cheerful', sex: 'Female', dateofbirth: '-', old: '2 years', story: 'Red Bean is a puppy whose mother gave birth and then abandoned next to a pile of garbage....', dateCome: 'May 20, 2563' },
+    { id: '6', language: 'EN', image: '/images/FB-ถั่วดิน.jpg', dogName: 'Ground Bean', character: 'Playful, Cheerful', sex: 'Female', old: '1 year', story: 'Ground Bean is a puppy whose mother gave birth and then abandoned next to a pile of garbage....' },
+    { id: '7', language: 'EN', image: '/images/FB-ถั่วเหลือง.jpg', dogName: 'Yellow Bean', character: 'Playful, Cheerful', sex: 'Female', old: '1 year 5 months', story: 'Yellow Bean is a puppy whose mother gave birth and then abandoned next to a pile of garbage....' },
+    { id: '8', language: 'EN', image: '/images/FB-ถั่วแปป.jpg', dogName: 'Bean Pap', character: 'Playful, Cheerful', sex: 'Male', old: '1 year 5 months', story: 'Bean Pap is a puppy whose mother gave birth and then abandoned next to a pile of garbage....' },
 ];
 
 export const slider = [

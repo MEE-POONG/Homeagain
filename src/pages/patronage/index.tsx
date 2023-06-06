@@ -1,4 +1,4 @@
-import { useEffect, useContext } from 'react';
+import { useContext } from 'react';
 import { Button, Card } from "react-bootstrap";
 import LayOut from "../../../components/LayOut";
 import { dogDetail } from "../../../data/dataTest";
@@ -16,9 +16,9 @@ interface DogDetail {
     dateCome?: string;
 }
 
-const myDogDetail: DogDetail[] = dogDetail;
 const PatronagePage: React.FC = () => {
     const { currentLanguage } = useContext(LanguageContext);
+    let myDogDetail: DogDetail[] = dogDetail.filter(dog => dog.language === currentLanguage);
     return (
         <LayOut>
             <div className="adoption-page container py-5 fade-in" data-wow-delay="0.1s">
@@ -39,7 +39,7 @@ const PatronagePage: React.FC = () => {
                                 </Card.Body>
                                 <Card.Body className=" text-center pt-0">
                                     <Link href={"patronage/" + item.id} className="btn">
-                                        โปรดอุปถัมภ์หนู
+                                        {currentLanguage === "EN" ? "Foster Me" : "โปรดอุปถัมภ์หนู"}
                                     </Link>
                                 </Card.Body>
                             </Card>
