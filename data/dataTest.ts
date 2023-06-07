@@ -33,6 +33,83 @@ export const gallery = [
     { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/32aa3bf6-0c11-4e18-d44a-68a2fe281b00/300' },
     { img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/0182b98a-5e36-4f31-b307-7136ab158a00/300' },
 ]
+export const newsData = [
+    {
+        id: "1",
+        language: "TH",
+        img: "https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/0e0e0f22-765a-4e6e-fa62-954ac0cc7300/500",
+        title: "24 กค.2564 มอบของ",
+        date: "สิงหาคม 3, 2021",
+        detail: "<p><a href=\"https://www.facebook.com/hashtag/NewHomeFoundation\">#มูลนิธิบ้านหลังใหม่ </a> และ <a href=\"https://www.facebook.com/hashtag/AtomClinic\">#อะตอมคลีนิก</a> ร่วมกันแบ่งปันข้าวสารอาหารแห้งให้กับตัวแทนชุมชนท้าวสุระซอย 3  เพื่อช่วยบรรเทาความเดือดร้อนให้กับผู้ได้รับผลกระทบจากเหตุการโรคระบาด โควิด 19 ค่ะ</p> <p><a href=\"https://www.facebook.com/hashtag/ThanksBaanKhanomThai\">#ขอบคุณร้านบ้านขนมไทย</a> โคราช  ที่ร่วมบริจาคอาหารแห้งและขนมอร่อยๆ ในทุกๆ ครั้งเลยนะคะ...</p> <p>เราลดการรวมตัวของคนจำนวนเยอะๆ ด้วยการส่งมอบให้ตัวแทนชุมชน  เพื่อดำเนินการเรียกลูกบ้านทะยอยมารับแจกต่อไปค่ะ...</p> <p>ขอให้ทุกคนปลอดภัย และผ่านช่วงวิกฤตนี้ไปให้ได้ด้วยกันนะคะ..<img alt=\"💕\" src=\"https://static.xx.fbcdn.net/images/emoji.php/v9/t68/1/16/1f495.png\" style=\"height:16px; width:16px\" /></p>"
+    },
+    {
+        id: "2",
+        language: "EN",
+        img: "https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/0e0e0f22-765a-4e6e-fa62-954ac0cc7300/500",
+        title: "July 24, 2564, Donation Delivery",
+        date: "สิงหาคม 3, 2021",
+        detail: "<p><a href=\"https://www.facebook.com/hashtag/NewHomeFoundation\">#NewHomeFoundation</a> and <a href=\"https://www.facebook.com/hashtag/AtomClinic\">#AtomClinic</a> are collaborating to distribute dry food and rice to representatives of the Surasoi community 3, to help relieve those affected by the COVID-19 outbreak.</p> <p><a href=\"https://www.facebook.com/hashtag/ThanksBaanKhanomThai\">#ThanksBaanKhanomThai</a> Korat for donating dry food and delicious snacks every time.</p> <p>We are reducing the gathering of large numbers of people by delivering to community representatives, who will then continue to distribute to their community members.</p> <p>Wishing everyone stays safe and gets through this crisis together..<img alt=\"💕\" src=\"https://static.xx.fbcdn.net/images/emoji.php/v9/t68/1/16/1f495.png\" style=\"height:16px; width:16px\" /></p>"
+    },
+    {
+        id: "3",
+        language: "TH",
+        img: "https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/e812b00f-41eb-4e82-2a24-8228f5c00200/500",
+        title: "การให้ความช่วยเหลือฉุกเฉิน",
+        date: "มกราคม 5, 2021",
+        detail: "ธุรกิจการค้าเนื้อสุนัขในภาคพื้นทวีปเอเชียเป็นหนึ่งในปัญหาด้านสวัสดิภาพสัตว์ ที่รุนแรงที่สุดในโลก และเป็นกิจการที่ป่าเถื่อนไร้มนุษยธรรมเช่นนี้ ที่มูลนิธิฯ ได้กำลังดำเนินการอย่างทุ่มเทมาตลอดเพื่อ"
+    },
+    {
+        id: "4",
+        language: "EN",
+        img: "https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/e812b00f-41eb-4e82-2a24-8228f5c00200/500",
+        title: "Emergency Assistance",
+        date: "มกราคม 5, 2021",
+        detail: "The dog meat trade in Asia is one of the most severe animal welfare issues in the world, and it's such a brutal and inhumane business that our foundation has been constantly working hard to combat."
+    },
+    {
+        id: "5",
+        language: "TH",
+        img: "https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/1a55bc9b-9f4a-4700-887d-022d92f40600/500",
+        title: "วิธีการบริจาค",
+        date: "มกราคม 5, 2021",
+        detail: "โปรดช่วยเราให้ได้ช่วยชีวิตสัตว์เหล่านี้ต่อไป พวกเขาถูกทำร้าย ถูกทิ้ง ได้รับบาดเจ็บ หรือเจ็บป่วย รวมทั้งสัตว์ที่ตกเป็นเหยื่อของธุรกิจการค้าเนื้อสุนัข"
+    },
+    {
+        id: "6",
+        language: "EN",
+        img: "https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/1a55bc9b-9f4a-4700-887d-022d92f40600/500",
+        title: "How to Donate",
+        date: "มกราคม 5, 2021",
+        detail: "Please help us continue to save these animals. They have been abused, abandoned, injured or sick, and some have fallen victim to the dog meat trade."
+    },
+    {
+        id: "7",
+        language: "TH",
+        img: "https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/4c620b75-3c92-4124-b176-8a540aa6bd00/500",
+        title: "วิธีการบริจาค",
+        date: "มกราคม 5, 2021",
+        detail: "โปรดช่วยเราให้ได้ช่วยชีวิตสัตว์เหล่านี้ต่อไป พวกเขาถูกทำร้าย ถูกทิ้ง ได้รับบาดเจ็บ หรือเจ็บป่วย รวมทั้งสัตว์ที่ตกเป็นเหยื่อของธุรกิจการค้าเนื้อสุนัข"
+    },
+    {
+        id: "8",
+        language: "EN",
+        img: "https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/4c620b75-3c92-4124-b176-8a540aa6bd00/500",
+        title: "How to Donate",
+        date: "มกราคม 5, 2021",
+        detail: "Please help us continue to save these animals. They have been abused, abandoned, injured or sick, and some have fallen victim to the dog meat trade."
+    }
+
+
+
+]
+export const Album = [
+    { id: "1", img: "", dataTable: "news", dataID: "" },
+    { id: "2", img: "", dataTable: "news", dataID: "" },
+    { id: "3", img: "", dataTable: "news", dataID: "" },
+    { id: "4", img: "", dataTable: "news", dataID: "" },
+    { id: "5", img: "", dataTable: "news", dataID: "" },
+    { id: "6", img: "", dataTable: "news", dataID: "" },
+];
 export const committee = [
     { id: '1', img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/fb9efe15-dde2-45d7-2d34-65446db0e700/300', nameTH: "พระวิเทศสิทธิธรรมมาภรณ์ (เจ้าคุณฤทธิ์) เจ้าอาวาสวัดอดัมมยตาราม", nameEN: "CHAO KHUN RIT", positionTH: "ที่ปรึกษา", positionEN: "ADVISOR", detailTH: "ผู้ก่อตั้งศูนย์ปฏิบัติธรรม Northwest Meditation Center", detailEN: "", level: "1" },
     { id: '2', img: 'https://imagedelivery.net/QZ6TuL-3r02W7wQjQrv5DA/8e44fcbf-3a60-4941-0e69-03b080ad4800/300', nameTH: "คุณพนอจิตต์ จิตต์สุวรรณ", nameEN: "Panorchit Chitsuwan Waymouth", positionTH: "ประธาน", positionEN: "PRESIDENT", detailTH: "", detailEN: "", level: "1" },
