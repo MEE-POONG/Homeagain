@@ -23,17 +23,17 @@ export default function SupportUsPage() {
                         </h2>
                         {howtoDonate.map((item) => (
                         <div key={item.id} className="text-start">
-                            <h4>ท่านสามารถบริจาคอาหารสัตว์และสิ่งของอื่น ๆ ที่จำเป็นต่อการดูแลสัตว์ ดังนี้</h4>
+                            <h4>{currentLanguage === "EN" ? "" : ""}{item.tital1}</h4>
                             <div className="mt-4 mb-3">
-                                <h5>สิ่งของที่รับบริจาค (ใช้ต่อเนื่อง) * รับ บริจาค ทุกยี่ห้อ *</h5>
-                                <p className="mb-0">- อาหารเม็ด สุนัข และ แมว (ทุกยี่ห้อ) สำหรับสุนัขโต</p>
-                                <p className="mb-0">- อาหารเม็ด ทุกรสชาติไม่จำกัดยี่ห้อ</p>
-                                <p className="mb-0">- แผ่นรองซับ  แบบแผ่นปูกรง</p>
-                                <p className="mb-0">- ทรายแมว (เพื่อเอาให้แมวขับถ่าย)</p>
-                                <p className="mb-0">- น้ำยาล้างจาน , ถุงขยะ ขนาดกลางและใหญ่</p>
-                                <p className="mb-0">- แชมพูอาบน้ำสุนัข</p>
+                                <h5>{item.tital1}</h5>
+                                <p className="mb-0">- {item.list1}</p>
+                                <p className="mb-0">- {item.list2}</p>
+                                <p className="mb-0">- {item.list3}</p>
+                                <p className="mb-0">- {item.list4}</p>
+                                <p className="mb-0">- {item.list5}</p>
+                                <p className="mb-0">- {item.list6}</p>
                             </div>
-                            <p className="mb-0">ท่านสามารถร่วมบริจาคเป็นสิ่งของอื่น ๆ นอกจากรายการข้างต้นได้ ซึ่งการร่วมบริจาค สามารถติดต่อเจ้าหน้าที่มูลนิธิ คุณนัท: 098-241-8799 เพื่อดำเนินการ</p>
+                            <p className="mb-0">{item.list7}</p>
 
                         </div>
                         ))}
