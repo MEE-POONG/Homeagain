@@ -13,8 +13,9 @@ const Committee: React.FC = () => {
     return (
         <>
             <LayOut>
-                <section className="about-section container text-center py-5 ">
-                    <div className="py-5 origin-section">
+                <section className="about-section text-center p-3">
+                    <div className="container bg-white p-lg-5 rounded-3">
+                    <div className="py-3 origin-section">
                         <p className="display-5">
                             {currentLanguage === "EN"
                                 ? "WBoard of Directors of the Foundation"
@@ -72,6 +73,7 @@ const Committee: React.FC = () => {
                         ))}
                     </div>
                     {/* <Image className="w-100" src="/images/Beige-Mod.png" alt="committee" /> */}
+                    </div>
                 </section>
             </LayOut >
         </>
