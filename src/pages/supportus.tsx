@@ -3,7 +3,7 @@ import LayOut from "../../components/LayOut";
 import { LanguageContext } from '../../components/LanguageContext';
 import useCopyToClipboard from "../../components/useCopyToClipboard";
 import { BiCopy } from "react-icons/bi";
-import { howtoDonate } from "../../data/dataTest";
+import { donation, howtoDonate } from "../../data/dataTest";
 
 
 export default function SupportUsPage() {
@@ -23,39 +23,40 @@ export default function SupportUsPage() {
                         </h2>
                         {howtoDonate.map((item) => (
                         <div key={item.id} className="text-start">
-                            <h4>ท่านสามารถบริจาคอาหารสัตว์และสิ่งของอื่น ๆ ที่จำเป็นต่อการดูแลสัตว์ ดังนี้</h4>
+                            <h4>{currentLanguage === "EN" ? "" : ""}{item.tital1}</h4>
                             <div className="mt-4 mb-3">
-                                <h5>สิ่งของที่รับบริจาค (ใช้ต่อเนื่อง) * รับ บริจาค ทุกยี่ห้อ *</h5>
-                                <p className="mb-0">- อาหารเม็ด สุนัข และ แมว (ทุกยี่ห้อ) สำหรับสุนัขโต</p>
-                                <p className="mb-0">- อาหารเม็ด ทุกรสชาติไม่จำกัดยี่ห้อ</p>
-                                <p className="mb-0">- แผ่นรองซับ  แบบแผ่นปูกรง</p>
-                                <p className="mb-0">- ทรายแมว (เพื่อเอาให้แมวขับถ่าย)</p>
-                                <p className="mb-0">- น้ำยาล้างจาน , ถุงขยะ ขนาดกลางและใหญ่</p>
-                                <p className="mb-0">- แชมพูอาบน้ำสุนัข</p>
+                                <h5>{item.tital1}</h5>
+                                <p className="mb-0">- {item.list1}</p>
+                                <p className="mb-0">- {item.list2}</p>
+                                <p className="mb-0">- {item.list3}</p>
+                                <p className="mb-0">- {item.list4}</p>
+                                <p className="mb-0">- {item.list5}</p>
+                                <p className="mb-0">- {item.list6}</p>
+                                <p className="mb-0">- {item.list7}</p>
                             </div>
-                            <p className="mb-0">ท่านสามารถร่วมบริจาคเป็นสิ่งของอื่น ๆ นอกจากรายการข้างต้นได้ ซึ่งการร่วมบริจาค สามารถติดต่อเจ้าหน้าที่มูลนิธิ คุณนัท: 098-241-8799 เพื่อดำเนินการ</p>
+                            <p className="mb-0">{item.list8}</p>
 
                         </div>
                         ))}
 
-                        <div className="text-start mt-5">
+
+                        {donation.map((item) => (
+                        <div key={item.id} className="text-start mt-5">
                             <h4>นอกจากบริจาคสิ่งของจำเป็น ท่านสามารถร่วมบริจาคเป็นเงิน เพื่อสมทบทุนในการดูแลสุนัข ที่อยู่ในการอุปถัมภ์ของมูลนิธิได้</h4>
                             <div className="mt-4 mb-3">
-                                <p className="mb-0">ช่องทางการโอนเงิน</p>
-                                <h5>บัญชีธนาคารกรุงไทย</h5>
-                                <p className="mb-0">ชื่อบัญชี : <strong>มูลนิธิบ้านหลังใหม่ Home Again Doggies Foundation</strong></p>
-                                <p className="mb-0">เลขที่บัญชี :
+                                <p className="mb-0">{currentLanguage === "EN" ? "Money transfer channels " : "ช่องทางการโอนเงิน"} </p>
+                                <h5>{item.account}</h5>
+                                <p className="mb-0">{currentLanguage === "EN" ? "Account Name " : "ชื่อบัญชี"} : <strong>{item.accName}</strong></p>
+                                <p className="mb-0">{currentLanguage === "EN" ? "Account No. " : "เลขที่บัญชี"} :
                                     <button onClick={() => copy('679-3-47783-8')}
                                         className="border-0 bg-transparent">
-                                        <strong>679-3-47783-8</strong> <BiCopy />
+                                        <strong>{item.accNo}</strong> <BiCopy />
                                     </button>
                                 </p>
-                                <p className="mb-0">SWIFTCOED : KRTHTHBK </p>
-
+                                <p className="mb-0">{currentLanguage === "EN" ? "SWIFTCOED " : "สวิฟต์คอด"} : {item.swiftcode} </p>
                             </div>
-
-
-                        </div>
+                        </div> 
+                        ))}
 
 
                     </div>
