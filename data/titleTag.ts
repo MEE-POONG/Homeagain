@@ -1,6 +1,7 @@
 
 export const NavigationBarData = [
     { id: '1', page: 'หน้าหลัก', link: "/", type: "link", language: 'TH' },
+    { id: '13', page: 'ข่าว', link: "/news", type: "link", language: 'TH' },
     {
         id: '2', page: 'เกี่ยวกับมูลนิธิฯ', link: "/about", type: "dropdown", language: 'TH',
         list: [
@@ -9,7 +10,6 @@ export const NavigationBarData = [
             { page: 'คณะกรรมการของมูลนิธิ', link: "/committee", },
         ]
     },
-    { id: '13', page: 'ข่าว', link: "/news", type: "link", language: 'TH' },
     { id: '3', page: 'การบริจาค', link: "/supportus", type: "link", language: 'TH' },
     { id: '4', page: 'การอุปถัมภ์สุนัข', link: "/patronage", type: "link", language: 'TH' },
     { id: '5', page: 'การรับอุปการะสุนัข', link: "/adoption", type: "link", language: 'TH' },

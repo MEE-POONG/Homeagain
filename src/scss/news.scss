@@ -12,5 +12,26 @@
         img {
             height: 250px;
         }
+        .card-title {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          
+          .card-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          &:hover{
+            z-index: 999;
+            transform: scale(1.1);
+            transition: all linear 200ms;
+
+          }
     }
 }
