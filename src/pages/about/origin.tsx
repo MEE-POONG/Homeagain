@@ -18,6 +18,8 @@ export default function OrigigSection() {
                     <div className=" m-sm-3 m-lg-5 py-5 shadow-snm">
                         <img src="/images/cer2.jpg" className="w-lg-50 w-75" alt="" />
                     </div>
+
+                    
                 </section>
             </LayOut>
         </>
