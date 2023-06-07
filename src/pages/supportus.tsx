@@ -3,6 +3,8 @@ import LayOut from "../../components/LayOut";
 import { LanguageContext } from '../../components/LanguageContext';
 import useCopyToClipboard from "../../components/useCopyToClipboard";
 import { BiCopy } from "react-icons/bi";
+import { howtoDonate } from "../../data/dataTest";
+
 
 export default function SupportUsPage() {
     const { currentLanguage } = useContext(LanguageContext);
@@ -19,8 +21,8 @@ export default function SupportUsPage() {
                                 ? "How to donate"
                                 : "วิธีร่วมบริจาค"}
                         </h2>
-
-                        <div className="text-start">
+                        {howtoDonate.map((item) => (
+                        <div key={item.id} className="text-start">
                             <h4>ท่านสามารถบริจาคอาหารสัตว์และสิ่งของอื่น ๆ ที่จำเป็นต่อการดูแลสัตว์ ดังนี้</h4>
                             <div className="mt-4 mb-3">
                                 <h5>สิ่งของที่รับบริจาค (ใช้ต่อเนื่อง) * รับ บริจาค ทุกยี่ห้อ *</h5>
@@ -34,6 +36,7 @@ export default function SupportUsPage() {
                             <p className="mb-0">ท่านสามารถร่วมบริจาคเป็นสิ่งของอื่น ๆ นอกจากรายการข้างต้นได้ ซึ่งการร่วมบริจาค สามารถติดต่อเจ้าหน้าที่มูลนิธิ คุณนัท: 098-241-8799 เพื่อดำเนินการ</p>
 
                         </div>
+                        ))}
 
                         <div className="text-start mt-5">
                             <h4>นอกจากบริจาคสิ่งของจำเป็น ท่านสามารถร่วมบริจาคเป็นเงิน เพื่อสมทบทุนในการดูแลสุนัข ที่อยู่ในการอุปถัมภ์ของมูลนิธิได้</h4>
@@ -44,7 +47,7 @@ export default function SupportUsPage() {
                                 <p className="mb-0">เลขที่บัญชี :
                                     <button onClick={() => copy('679-3-47783-8')}
                                         className="border-0 bg-transparent">
-                                        <strong>679-3-47783-8</strong> <BiCopy/> 
+                                        <strong>679-3-47783-8</strong> <BiCopy />
                                     </button>
                                 </p>
                                 <p className="mb-0">SWIFTCOED : KRTHTHBK </p>
