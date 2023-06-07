@@ -1,13 +1,38 @@
 import { useContext, useState } from "react";
 import LayOut from "../../components/LayOut";
-import { LanguageContext } from '../../components/LanguageContext';
+import { LanguageContext } from '@components/LanguageContext';
 import useCopyToClipboard from "../../components/useCopyToClipboard";
 import { BiCopy } from "react-icons/bi";
-import { donation, howtoDonate } from "../../data/dataTest";
+import { howtoDonate,donation } from "@data/dataTest";
+
+
+interface HowtoDonate{
+    id: string;
+    tital1: string;
+    list1: string;
+    list2: string;
+    list3: string;
+    list4: string;
+    list5: string;
+    list6: string;
+    list7: string;
+    list8: string;
+
+}
+interface Donational {
+    id: string;
+    title2: string;
+    account: string;
+    accName: string;
+    accNo:string;
+    swiftcode: string;
+}
 
 
 export default function SupportUsPage() {
     const { currentLanguage } = useContext(LanguageContext);
+    let howto: HowtoDonate[] = howtoDonate.filter(how => how.language === currentLanguage);
+    let paydonate: Donational[] = donation.filter(how => how.language === currentLanguage);
 
     const [value, copy] = useCopyToClipboard()
 
@@ -21,12 +46,11 @@ export default function SupportUsPage() {
                                 ? "How to donate"
                                 : "วิธีร่วมบริจาค"}
                         </h2>
-                        {howtoDonate.map((item) => (
+                        {howto.map((item: HowtoDonate) => (
                         <div key={item.id} className="text-start">
                             <h4>{currentLanguage === "EN" ? "" : ""}{item.tital1}</h4>
                             <div className="mt-4 mb-3">
-                                <h5>{item.tital1}</h5>
-                                <p className="mb-0">- {item.list1}</p>
+                                <h5>{item.list1}</h5>
                                 <p className="mb-0">- {item.list2}</p>
                                 <p className="mb-0">- {item.list3}</p>
                                 <p className="mb-0">- {item.list4}</p>
@@ -40,9 +64,9 @@ export default function SupportUsPage() {
                         ))}
 
 
-                        {donation.map((item) => (
+                        {paydonate.map((item: Donational) => (
                         <div key={item.id} className="text-start mt-5">
-                            <h4>นอกจากบริจาคสิ่งของจำเป็น ท่านสามารถร่วมบริจาคเป็นเงิน เพื่อสมทบทุนในการดูแลสุนัข ที่อยู่ในการอุปถัมภ์ของมูลนิธิได้</h4>
+                            <h4>{item.title2}</h4>
                             <div className="mt-4 mb-3">
                                 <p className="mb-0">{currentLanguage === "EN" ? "Money transfer channels " : "ช่องทางการโอนเงิน"} </p>
                                 <h5>{item.account}</h5>
