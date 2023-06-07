@@ -1,4 +1,3 @@
-// HtmlContent.tsx
 import React from 'react';
 
 interface HtmlContentProps {
@@ -6,7 +5,9 @@ interface HtmlContentProps {
 }
 
 const HtmlContent: React.FC<HtmlContentProps> = ({ content }) => {
-  return <div className='html-text' dangerouslySetInnerHTML={{ __html: content || '' }} />;
+  return (
+    <div dangerouslySetInnerHTML={{ __html: content || '' }} />
+  );
 };
 
 export default HtmlContent;

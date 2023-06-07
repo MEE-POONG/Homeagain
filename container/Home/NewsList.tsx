@@ -1,0 +1,55 @@
+import React from 'react';
+import { useContext } from 'react';
+import { newsData } from '@data/dataTest';
+import { LanguageContext } from '@components/LanguageContext';
+import Link from 'next/link';
+import { Card, Col, Row } from 'react-bootstrap';
+// import HtmlContent from "@components/HtmlContent";
+
+interface NewsItem {
+    id: string,
+    language: string,
+    img: string,
+    title: string,
+    date: string,
+    detail: string,
+}
+
+const NewsList: React.FC = () => {
+    const { currentLanguage } = useContext(LanguageContext);
+    let myNewsDetail: NewsItem[] = newsData.filter(dog => dog.language === currentLanguage);
+    return (
+        <div className="container mt-5 text-center news mx-auto">
+            <h3>
+                {currentLanguage === "EN"
+                    ? "Activity News"
+                    : "ข่าวกิจกรรม"}
+            </h3>
+            <Row>
+                {myNewsDetail.map((item: NewsItem, index: number) => (
+                    <Col lg={3}>
+                        <Link key={index} className='m-2' href="news/id">
+                            <Card>
+                                <img className="card-img img-gallery" src={item.img} alt="" />
+                                <Card.Body>
+                                    <Card.Title>
+                                        {item.title}
+                                    </Card.Title>
+                                    {/* <Card.Text>
+                                        <HtmlContent content={item?.detail} />
+                                    </Card.Text> */}
+                                </Card.Body>
+                            </Card>
+                        </Link>
+                    </Col>
+
+                ))}
+            </Row>
+            <div className='d-flex flex-wrap align-content-around justify-content-center'>
+
+            </div>
+        </div>
+    );
+};
+
+export default NewsList;

@@ -6,6 +6,7 @@ import FeatureTwo from '../../container/Home/Featuer-Two'
 import Sponsorship from '../../container/Home/Sponsorship'
 import Gallery from '../../container/Home/activities'
 import { HeaderSlider } from '../../container/Home/HeaderSlider'
+import NewsList from '../../container/Home/NewsList'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +24,7 @@ export default function Home() {
       <div className='home-page'>
         <TopFeatures />
         <FeatureTwo />
+        <NewsList />
         <Sponsorship />
         <Gallery />
       </div>
