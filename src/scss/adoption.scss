@@ -1,4 +1,6 @@
 .adoption-page {
+    position: relative;
+    z-index: 2;
     .btn {
         color: #000000;
         border: 2px solid var(--primary);
@@ -15,12 +17,11 @@
     .card {
         transition: transform 0.2s; /* Animation */
         margin: 0 auto;
-        z-index: 99;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
     .card:hover {
-        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        z-index: 9999;
+        transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        
     }
 }

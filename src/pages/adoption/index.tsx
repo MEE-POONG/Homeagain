@@ -3,6 +3,7 @@ import LayOut from '@components/LayOut';
 import { dogDetail } from "@data/dataTest";
 import { LanguageContext } from "@components/LanguageContext";
 import { useContext } from "react";
+import Link from "next/link";
 
 interface DogDetail {
     id: string;
@@ -38,21 +39,41 @@ export default function AdoptionPage() {
                         <div className="row align-content-around">
                             <p className="display-5 text-start py-4">
                                 {currentLanguage === "EN"
-                                    ? "Adoption Dog"
-                                    : "สุนัขที่รอรับการอุปการะ"}
+                                    ? "Dogs waiting to be adopted"
+                                    : "สุนัขที่รอรับการอุปการะ"
+                                }
+
                             </p>
-                            {dogDetail.map((item) => (
+                            {myDogDetail.map((item: DogDetail) => (
                                 <div key={item.id} className="col-lg-3 mb-4 d-flex d-sm-flex justify-content-between">
-                                    <Card style={{ width: '15rem' }}>
+                                    <Card style={{ width: '15rem' }} >
                                         <Card.Img variant="top" src={item.image} />
                                         <Card.Body>
-                                            <Card.Title>เพศเมีย</Card.Title>
-                                            <Card.Text>
-                                                {item.old}
+                                            <Card.Title>
+                                                {currentLanguage === "EN"
+                                                    ? "Name"
+                                                    : "ชื่อ"
+                                                } : {item.dogName}
+                                            </Card.Title>
+                                            <Card.Text className="p-0 m-0">
+                                                {currentLanguage === "EN"
+                                                    ? "Ole"
+                                                    : "อายุ"
+                                                }
+                                                : {item.old}
                                             </Card.Text>
-                                            <a href={"adoption/" + item.id}>
-                                                <Button variant="">โปรดอุปถัมภ์หนู</Button>
-                                            </a>
+                                            <Card.Text className="p-0 m-0">
+                                                {currentLanguage === "EN"
+                                                    ? "Sex"
+                                                    : "เพศ"
+                                                } 
+                                                : {item.sex}
+                                            </Card.Text>
+                                        </Card.Body>
+                                        <Card.Body className=" text-center pt-0">
+                                            <Link href={"patronage/" + item.id} className="btn">
+                                                {currentLanguage === "EN" ? "Foster Me" : "โปรดอุปถัมภ์หนู"}
+                                            </Link>
                                         </Card.Body>
                                     </Card>
 
