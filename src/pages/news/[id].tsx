@@ -6,6 +6,7 @@ import { Button, Col, Image, Row } from "react-bootstrap";
 import { LanguageContext } from "@components/LanguageContext";
 import Link from 'next/link';
 import HtmlContent from '@components/HtmlContent';
+import GoBack from '@components/GoBack';
 
 interface newsDetail {
     id: string;
@@ -26,6 +27,7 @@ const newsDetailPage: React.FC = () => {
     return (
         <LayOut>
             <div className='titie-tab py-2'>
+                <GoBack />
                 {newsItem?.title}
             </div>
             <div className="container adoption-page">
