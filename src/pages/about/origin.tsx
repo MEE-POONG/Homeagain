@@ -1,5 +1,5 @@
-import LayOut from "../../../components/LayOut";
-import { LanguageContext } from "../../../components/LanguageContext";
+import LayOut from "@components/LayOut";
+import { LanguageContext } from "@components/LanguageContext";
 import { useContext } from "react";
 import { Col, Row } from "react-bootstrap";
 

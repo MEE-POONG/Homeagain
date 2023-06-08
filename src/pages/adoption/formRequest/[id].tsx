@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import LayOut from "../../../../components/LayOut";
+import LayOut from "@components/LayOut";
 
 export default function FormSpon() {
     const router = useRouter();
@@ -8,7 +8,7 @@ export default function FormSpon() {
         <LayOut>
             <section className="form-request container p-5">
                 <div className="row mt-5">
-                <div className="col-lg-5 col-12 mx-auto">
+                    <div className="col-lg-5 col-12 mx-auto">
                         <form className="custom-form" action="#" method="post" role="form">
                             <h2>กรอกข้อมูลของท่าน</h2>
                             <p>**กรุณากรอกข้อมูลตามความจริง เพื่อใช้ในการติดต่อ และยืนยันตัวตน</p>
@@ -41,10 +41,10 @@ export default function FormSpon() {
                                 <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" className="form-control"
                                     placeholder="" required />
                             </div>
-                            
+
                             <label className="mt-3" htmlFor="email">โปรดอธิบายเกี่ยวกับตัวคุณ พอสังเขป*</label>
                             <textarea name="message" rows={5} className="form-control " id="message"
-                                        placeholder="เกี่ยวกับคุณ"></textarea>
+                                placeholder="เกี่ยวกับคุณ"></textarea>
 
                             <button type="submit" className="button form-control mt-3">บันทึก</button>
                         </form>
@@ -63,12 +63,12 @@ export default function FormSpon() {
                                     <p className="mb-0">ติดต่อ: <strong>มูลนิธิบ้านหลังใหม่</strong></p>
                                     <p className="mb-0">เบอร์โทร: <strong>098-241-8799 (คุณนัท)</strong></p>
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
 
-                    
+
                 </div>
             </section>
         </LayOut>

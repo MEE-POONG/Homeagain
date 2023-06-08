@@ -1,9 +1,11 @@
 import { useContext } from 'react';
 import { useRouter } from "next/router";
-import LayOut from "../../../components/LayOut"
-import { dogDetail } from "../../../data/dataTest";
+import LayOut from "@components/LayOut"
+import GoBack from '@components/GoBack';
+import { dogDetail } from "@data/dataTest";
 import { Button, Col, Image, Row } from "react-bootstrap";
-import { LanguageContext } from "../../../components/LanguageContext";
+import { LanguageContext } from "@components/LanguageContext";
+
 import Link from 'next/link';
 
 interface DogDetail {
@@ -27,6 +29,7 @@ const DogDetailPage: React.FC = () => {
     return (
         <LayOut>
             <div className='titie-tab py-2'>
+                <GoBack />
                 {currentLanguage === "EN" ? "To Patronize : " : "ทำความรู้จัก : "} {dogItem?.dogName}
             </div>
             <div className="container adoption-page">

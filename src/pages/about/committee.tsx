@@ -1,8 +1,8 @@
 import { Image, Row } from "react-bootstrap";
-import LayOut from "../../../components/LayOut";
-import { committee } from "../../../data/dataTest";
+import LayOut from "@components/LayOut";
+import { committee } from "@data/dataTest";
 import { useContext } from "react";
-import { LanguageContext } from "../../../components/LanguageContext";
+import { LanguageContext } from "@components/LanguageContext";
 
 const Committee: React.FC = () => {
     const { currentLanguage } = useContext(LanguageContext);

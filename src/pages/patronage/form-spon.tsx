@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
-import LayOut from "../../../components/LayOut"
-import { dogDetail } from "../../../data/dataTest";
+import LayOut from "@components/LayOut"
+import { dogDetail } from "@data/dataTest";
 
 export default function FormSpon() {
     const router = useRouter();

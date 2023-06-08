@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import LayOut from '../../../components/LayOut';
-import { LanguageContext } from '../../../components/LanguageContext';
+import LayOut from '@components/LayOut';
+import { LanguageContext } from '@components/LanguageContext';
 
 const AboutPage: React.FC = () => {
     const { currentLanguage } = useContext(LanguageContext);

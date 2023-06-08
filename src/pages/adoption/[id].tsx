@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
-import LayOut from "../../../components/LayOut"
-import { dogDetail } from "../../../data/dataTest";
+import LayOut from "@components/LayOut"
+import { dogDetail } from "@data/dataTest";
 import { Button } from "react-bootstrap";
 
 export default function DogDetail() {

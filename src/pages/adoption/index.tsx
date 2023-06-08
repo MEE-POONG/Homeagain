@@ -1,6 +1,6 @@
 import { Button, Card } from "react-bootstrap";
-import LayOut from '../../../components/LayOut';
-import { dogDetail } from "../../../data/dataTest";
+import LayOut from '@components/LayOut';
+import { dogDetail } from "@data/dataTest";
 import { LanguageContext } from "@components/LanguageContext";
 import { useContext } from "react";
 

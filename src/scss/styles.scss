@@ -182,3 +182,14 @@ a {
 .z-index-999 {
     z-index: 999;
 }
+.btn-back {
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #ffffff;
+    transform: translate(0, -50%);
+    margin-left: 15px;
+    padding: 5px;
+    display: flex;
+}
