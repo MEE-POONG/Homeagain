@@ -23,7 +23,7 @@ const NewsList: React.FC = () => {
             <h3>
                 {currentLanguage === "EN"
                     ? "Activity News"
-                    : "ข่าวกิจกรรม"}
+                    : "ข่าวและกิจกรรม"}
             </h3>
             <Row>
                 {myNewsDetail.map((item: NewsItem, index: number) => (

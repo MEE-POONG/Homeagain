@@ -67,6 +67,19 @@ a {
             color: white !important;
         }
     }
+    .text {
+        position: absolute;
+        z-index: 999;
+        bottom: 0;
+        background-color: #ffffff;
+        margin: 1rem;
+        padding: 1rem;
+        h3,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
 .bold {
     font-weight: bold !important;
@@ -150,10 +163,22 @@ a {
     font-family: "Prompt", sans-serif;
     font-weight: 600;
 }
-.object-contain{
+.object-contain {
     object-fit: contain;
+}
+.object-cover {
+    object-fit: cover;
 }
 .title-prompt {
     font-family: "Prompt", sans-serif;
     font-weight: 600;
+}
+.z-index-99 {
+    z-index: 99;
+}
+.z-index-199 {
+    z-index: 199;
+}
+.z-index-999 {
+    z-index: 999;
 }
