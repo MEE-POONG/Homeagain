@@ -1,14 +1,30 @@
-import LayOut from "../../components/LayOut";
+import React, { useContext } from 'react';
+import LayOut from '@components/LayOut';
+import { LanguageContext } from '@components/LanguageContext';
 
-export default function NewsPage() {
+const NewsPage: React.FC = () => {
+    const { currentLanguage } = useContext(LanguageContext);
+
     return (
-        <>
-            <LayOut>
-                {/* Page Header */}
-                <div className="container-fluid py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-                    <h1 className="display-3 text-info mb-4">ข่าวสารและกิจกรรม</h1>
+        <LayOut>
+            <section className='News-section container-fluid '>
+                <img src="/images/pic2.png" className=' w-100' alt="" />
+                <div className="container-xxl py-5 bg-white mt-5 rounded-3">
+                    <div className="container">
+                        <div className="row g-5 align-items-center">
+                            <div className="col-lg-4 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+                                <img className="img-fluid rounded" data-wow-delay="0.1s" src="images/pic1.jpg" />
+                            </div>
+                            <div className="col-lg-8 wow fadeInUp" data-wow-delay="0.3s">
+                                <h1 className="display-5 mb-0">{currentLanguage === "EN" ? "Welcome to the new house foundation" : "ยินดีต้อนรับสู่มูลนิธิบ้านหลังใหม่"}</h1>
+                                <p className="text-primary mb-4"> Home Again Doggies Foundations</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </LayOut>
-        </>
+            </section>
+        </LayOut>
     )
 }
+
+export default NewsPage;

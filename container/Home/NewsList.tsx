@@ -27,17 +27,18 @@ const NewsList: React.FC = () => {
             </h3>
             <Row>
                 {myNewsDetail.map((item: NewsItem, index: number) => (
-                    <Col lg={3}>
-                        <Link key={index} className='m-2' href="news/id">
+                    <Col lg={3} key={index}>
+                        <Link className='m-2' href={`/news/${item.id}`}>
                             <Card>
                                 <img className="card-img img-gallery" src={item.img} alt="" />
                                 <Card.Body>
                                     <Card.Title>
                                         {item.title}
                                     </Card.Title>
-                                    {/* <Card.Text>
-                                        <HtmlContent content={item?.detail} />
-                                    </Card.Text> */}
+                                    <Card.Text>
+                                        {/* <HtmlContent content={item?.detail} /> */}
+                                        {item.date}
+                                    </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Link>
@@ -45,8 +46,10 @@ const NewsList: React.FC = () => {
 
                 ))}
             </Row>
-            <div className='d-flex flex-wrap align-content-around justify-content-center'>
-
+            <div className='text-end'>
+                <Link href={`/news`} className='btn'>
+                    <h3>{currentLanguage === 'EN' ? "Read >>>>" : "อ่านต่อ >>>>"}</h3>
+                </Link>
             </div>
         </div>
     );
