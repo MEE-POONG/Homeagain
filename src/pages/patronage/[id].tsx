@@ -23,6 +23,7 @@ const DogDetailPage: React.FC = () => {
     const { id } = router.query;
     const dogItem = dogDetail.find((item: DogDetail) => item.id === id);
     const { currentLanguage } = useContext(LanguageContext);
+    
 
     return (
         <LayOut>
@@ -42,7 +43,8 @@ const DogDetailPage: React.FC = () => {
                         <hr />
                         <h5 className="mb-0">{currentLanguage === "EN" ? "Color : " : "ลายสี: "} <strong>{dogItem?.character}</strong> </h5>
                         <h5 className="mb-0">{currentLanguage === "EN" ? "Character : " : "ลักษณะนิสัย: "}: <strong>{dogItem?.character}</strong> </h5>
-                        <hr />ลักษณะนิสัย
+                        <hr />
+                        <p>{currentLanguage === "EN" ? "Character" :"ลักษณะนิสัย"}</p>
                         <h4 className="mb-1">{currentLanguage === "EN" ? "Old : " : "เรื่องราวของ: "}{dogItem?.dogName}</h4>
                         <h5>{dogItem?.story}</h5>
                     </Col>

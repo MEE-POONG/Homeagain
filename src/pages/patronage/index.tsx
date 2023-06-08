@@ -21,12 +21,12 @@ const PatronagePage: React.FC = () => {
     let myDogDetail: DogDetail[] = dogDetail.filter(dog => dog.language === currentLanguage);
     return (
         <LayOut>
-            <div className="adoption-page container py-5 fade-in" data-wow-delay="0.1s">
+            <div className="adoption-page container py-5 fade-in" data-wow-delay="0.1s"  >
                 <div className="row ">
                     <p className="display-5 text-center py-4">{currentLanguage === "EN" ? "Adoption Dog" : "สุนัขที่รอการอุปการะ"}</p>
                     {myDogDetail.map((item: DogDetail) => (
                         <div key={item.id} className="col-lg-3 mb-4 d-flex d-sm-flex justify-content-between">
-                            <Card style={{ width: '15rem' }}>
+                            <Card style={{ width: '15rem' }} >
                                 <Card.Img variant="top" src={item.image} />
                                 <Card.Body>
                                     <Card.Title>{item.dogName}</Card.Title>
