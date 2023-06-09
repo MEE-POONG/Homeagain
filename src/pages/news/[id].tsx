@@ -1,9 +1,7 @@
-import { useContext } from 'react';
 import { useRouter } from "next/router";
 import LayOut from "@components/LayOut"
 import { newsData } from "@data/dataTest";
 import { Button, Col, Image, Row } from "react-bootstrap";
-import { LanguageContext } from "@components/LanguageContext";
 import Link from 'next/link';
 import HtmlContent from '@components/HtmlContent';
 import GoBack from '@components/GoBack';
@@ -22,7 +20,6 @@ const newsDetailPage: React.FC = () => {
     const router = useRouter();
     const { id } = router.query;
     const newsItem = newsData.find((item: newsDetail) => item.id === id);
-    const { currentLanguage } = useContext(LanguageContext);
 
     return (
         <LayOut>
