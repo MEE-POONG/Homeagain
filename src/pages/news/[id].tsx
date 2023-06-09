@@ -6,7 +6,7 @@ import Link from 'next/link';
 import HtmlContent from '@components/HtmlContent';
 import GoBack from '@components/GoBack';
 
-interface newsDetail {
+interface NewsDetail {
     id: string;
     language: string;
     img: string;
@@ -15,11 +15,10 @@ interface newsDetail {
     date?: string;
 }
 
-
-const newsDetailPage: React.FC = () => {
+const NewsDetailPage: React.FC = () => {
     const router = useRouter();
     const { id } = router.query;
-    const newsItem = newsData.find((item: newsDetail) => item.id === id);
+    const newsItem = newsData.find((item: NewsDetail) => item.id === id);
 
     return (
         <LayOut>
@@ -42,4 +41,4 @@ const newsDetailPage: React.FC = () => {
     );
 }
 
-export default newsDetailPage;
+export default NewsDetailPage;
