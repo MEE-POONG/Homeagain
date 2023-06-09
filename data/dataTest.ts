@@ -146,9 +146,27 @@ export const howtoDonate = [
 ]
 
 export const donation = [
-    { id: '1', language: 'TH', titel2: 'นอกจากบริจาคสิ่งของจำเป็น ท่านสามารถร่วมบริจาคเป็นเงิน เพื่อสมทบทุนในการดูแลสุนัข ที่อยู่ในการอุปถัมภ์ของมูลนิธิได้', list1: 'ช่องทางการโอนเงิน', account: 'บัญชีธนาคารกรุงไทย', accName: 'มูลนิธิบ้านหลังใหม่ Home Again Doggies Foundation', accNo: '679-3-47783-8 ', swiftcode: 'KRTHTHBK' },
-    { id: '2', language: 'EN', title2: 'In addition to donating essential items You can make a monetary donation. to raise funds for the care of the dogs under the patronage of the foundation', list1: '', account: 'Krung Thai Bank account', accName: 'มูลนิธิบ้านหลังใหม่ Home Again Doggies Foundation', accNo: '679-3-47783-8 ', swiftcode: 'KRTHTHBK', list8: '' },
-    
+    {
+        id: '1',
+        language: 'TH',
+        title: 'นอกจากบริจาคสิ่งของจำเป็น ท่านสามารถร่วมบริจาคเป็นเงิน เพื่อสมทบทุนในการดูแลสุนัข ที่อยู่ในการอุปถัมภ์ของมูลนิธิได้',
+        list: 'ช่องทางการโอนเงิน',
+        account: 'บัญชีธนาคารกรุงไทย',
+        accName: 'มูลนิธิบ้านหลังใหม่ Home Again Doggies Foundation',
+        accNo: '679-3-47783-8 ',
+        swiftcode: 'KRTHTHBK'
+    },
+    {
+        id: '2',
+        language: 'EN',
+        title: 'In addition to donating essential items You can make a monetary donation. to raise funds for the care of the dogs under the patronage of the foundation',
+        list: '',
+        account: 'Krung Thai Bank account',
+        accName: 'มูลนิธิบ้านหลังใหม่ Home Again Doggies Foundation',
+        accNo: '679-3-47783-8 ',
+        swiftcode: 'KRTHTHBK'
+    },
+
 ]
 
 export const setting = [
